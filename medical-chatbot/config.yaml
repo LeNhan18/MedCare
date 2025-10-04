@@ -1,0 +1,53 @@
+# Configuration settings for the medical chatbot application
+
+model:
+  # Model 1: Intent Classification
+  intent_classifier:
+    path: "data/models/intent_classifier.h5"
+    model_type: "bert"  # bert, distilbert, phobert
+    max_length: 128
+    classes: ["triệu_chứng", "tra_cứu_thuốc", "tư_vấn_sử_dụng", "thông_tin_bệnh", "khác"]
+    confidence_threshold: 0.7
+
+  # Model 2: Named Entity Recognition (NER) for symptoms and medical entities
+  symptom_extractor:
+    path: "data/models/symptom_extractor.h5"
+    model_type: "bert_crf"  # bert_crf, bilstm_crf
+    max_length: 128
+    entities: ["SYMPTOM", "DISEASE", "DRUG", "ACTIVE_INGREDIENT", "AGE", "BODY_PART"]
+    label_scheme: "BIO"  # BIO tagging scheme
+
+  # Model 3: Drug Recommendation System
+  drug_recommender:
+    path: "data/models/drug_recommender.h5"
+    model_type: "embedding_similarity"  # embedding_similarity, neural_collaborative
+    embedding_dim: 256
+    top_k: 5  # Top K drug recommendations
+    similarity_threshold: 0.6
+
+  # Model 4: Risk Checking / Contraindication
+  risk_checker:
+    path: "data/models/risk_checker.h5"
+    model_type: "classifier"
+    input_features: ["age", "gender", "existing_conditions", "current_drugs"]
+    risk_levels: ["safe", "caution", "contraindicated"]
+    confidence_threshold: 0.8
+
+training:
+  batch_size: 32
+  epochs: 50
+  learning_rate: 0.001
+  validation_split: 0.2
+
+data:
+  raw_data_path: "data/raw/"
+  processed_data_path: "data/processed/"
+  augmentation: true
+
+api:
+  host: "0.0.0.0"
+  port: 5000
+
+logging:
+  level: "INFO"
+  file: "logs/chatbot.log"
