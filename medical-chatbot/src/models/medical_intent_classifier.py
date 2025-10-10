@@ -116,7 +116,7 @@ class MedicalIntentClassifier:
                         for template in symptom_templates:
                             training_data.append((template, 'symptom_inquiry'))
                 
-                # Tạo các câu hỏi về thuốc từ drug_name - RÕ RÀNG LÀ DRUG_QUESTION
+                # Tạo các câu hỏi về thuốc từ drug_name - RÕ RÀNG LÀ DRUG_QUESTION  
                 if drug_name and str(drug_name) not in ['', 'nan', 'NaN', 'None']:
                     drug_templates = [
                         f"Thuốc {drug_name} có tác dụng gì",
@@ -124,12 +124,19 @@ class MedicalIntentClassifier:
                         f"Có nên uống thuốc {drug_name} không",
                         f"Thuốc {drug_name} chữa bệnh gì",
                         f"Thông tin về thuốc {drug_name}",
-                        f"Thuốc {drug_name} như thế nào"
+                        f"Thuốc {drug_name} như thế nào",
+                        # Thêm variants natural hơn
+                        f"{drug_name} chữa bệnh gì",
+                        f"{drug_name} có tốt không",
+                        f"{drug_name} có hiệu quả không",
+                        f"Thuốc {drug_name} có an toàn",
+                        f"Về thuốc {drug_name}",
+                        f"{drug_name} là thuốc gì"
                     ]
                     
-                    # Tạo nhiều samples với xác suất 35%
-                    if random.random() < 0.35:  # 35% chance
-                        selected_drug_templates = random.sample(drug_templates, min(3, len(drug_templates)))
+                    # Tăng xác suất tạo drug samples
+                    if random.random() < 0.45:  # Tăng từ 35% lên 45%
+                        selected_drug_templates = random.sample(drug_templates, min(4, len(drug_templates)))
                         for template in selected_drug_templates:
                             training_data.append((template, 'drug_question'))
                 
