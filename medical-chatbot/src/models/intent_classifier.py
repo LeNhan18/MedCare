@@ -1,27 +1,66 @@
+#!/usr/bin/env python3
 """
-Model 1: Intent Classification
-Mục tiêu: Nhận diện ý định của người dùng
+Medical Chatbot - Intent Classification Model
+Phân loại ý định người dùng từ câu hỏi tiếng Việt
+
+Intent Categories:
+- symptom_inquiry: Hỏi về triệu chứng ("Tôi bị đau đầu")
+- drug_question: Hỏi về thuốc ("Paracetamol có tác dụng gì?") 
+- emergency: Tình huống khẩn cấp ("Tôi bị đau ngực dữ dội")
+- dosage_question: Hỏi về liều lượng ("Uống bao nhiêu viên?")
+- side_effects: Hỏi về tác dụng phụ ("Thuốc này có tác dụng phụ không?")
+- general_health: Câu hỏi sức khỏe tổng quát ("Làm sao để khỏe mạnh?")
+- greeting: Chào hỏi ("Xin chào", "Hello")
+- unknown: Không xác định được
 """
 
-import tensorflow as tf
-from transformers import TFAutoModel, AutoTokenizer
+import pandas as pd
 import numpy as np
-import yaml
+import joblib
+import re
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.pipeline import Pipeline
+import json
+from datetime import datetime
 import os
 
-class IntentClassifier:
-    def __init__(self, config_path="config.yaml"):
-        with open(config_path, 'r', encoding='utf-8') as f:
-            config = yaml.safe_load(f)
+class MedicalIntentClassifier:
+    def __init__(self, model_path=None):
+        """
+        Initialize Intent Classifier for Vietnamese medical queries
         
-        self.model_config = config['model']['intent_classifier']
-        self.classes = self.model_config['classes']
-        self.max_length = self.model_config['max_length']
-        self.confidence_threshold = self.model_config['confidence_threshold']
-        self.model_type = self.model_config['model_type']
-        
-        self.tokenizer = None
+        Args:
+            model_path (str): Path to saved model file
+        """
         self.model = None
+        self.vectorizer = None
+        self.pipeline = None
+        self.intent_labels = [
+            'symptom_inquiry',
+            'drug_question', 
+            'emergency',
+            'dosage_question',
+            'side_effects',
+            'general_health',
+            'greeting',
+            'unknown'
+        ]
+        
+        # Emergency keywords for high-priority detection
+        self.emergency_keywords = [
+            'cấp cứu', 'emergency', 'nguy hiểm', 'nguy kịch',
+            'đau ngực dữ dội', 'khó thở', 'mất ý thức', 
+            'xuất huyết', 'chảy máu nhiều', 'sốt cao',
+            'co giật', 'đột quỵ', 'tim đập nhanh',
+            'hôn mê', 'ngộ độc', 'dị ứng nặng'
+        ]
+        
+        if model_path and os.path.exists(model_path):
+            self.load_model(model_path)
         
     def build_model(self):
         """Xây dựng model BERT cho phân loại intent"""
