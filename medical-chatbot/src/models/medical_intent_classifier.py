@@ -349,20 +349,15 @@ class MedicalIntentClassifier:
         
         # Detailed classification report
         y_pred = self.pipeline.predict(X_test)
-        print("\n📊 Classification Report:")
+        print("\n Classification Report:")
         print(classification_report(y_test, y_pred))
         
         # Save model nếu có path
         if save_path:
             self.save_model(save_path)
-            print(f"💾 Model saved to: {save_path}")
+            print(f" Model saved to: {save_path}")
             
-        return {
-            'train_accuracy': train_score,
-            'test_accuracy': test_score,
-            'cv_accuracy_mean': cv_scores.mean(),
-            'cv_accuracy_std': cv_scores.std()
-        }
+        return test_score  # Return single accuracy score for compatibility
     
     def predict(self, text, return_confidence=False):
         """
@@ -402,6 +397,19 @@ class MedicalIntentClassifier:
             return intent, confidence_dict
             
         return intent
+    
+    def predict_intent(self, text):
+        """
+        Alias cho predict() để tương thích
+        """
+        return self.predict(text)
+        
+    def get_confidence(self, text):
+        """
+        Get confidence score cho predicted intent
+        """
+        _, confidence_dict = self.predict(text, return_confidence=True)
+        return max(confidence_dict.values())
     
     def batch_predict(self, texts):
         """
