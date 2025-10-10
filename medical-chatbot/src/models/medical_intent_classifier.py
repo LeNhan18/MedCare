@@ -72,12 +72,13 @@ class MedicalIntentClassifier:
         training_data = []
         
         try:
-            # Đọc dữ liệu từ file CSV với encoding tự động detect
+            # Đọc dữ liệu từ file CSV với absolute path
+            csv_path = os.path.join(os.getcwd(), 'data', 'medical_dataset_training.csv')
             try:
-                df = pd.read_csv('data/medical_dataset_training.csv', encoding='utf-8')
+                df = pd.read_csv(csv_path, encoding='utf-8')
             except UnicodeDecodeError:
                 print("UTF-8 failed, trying latin-1...")
-                df = pd.read_csv('data/medical_dataset_training.csv', encoding='latin-1')
+                df = pd.read_csv(csv_path, encoding='latin-1')
             
             print(f"Đã tải {len(df)} bản ghi từ dataset y tế (CSV)")
             
@@ -91,7 +92,7 @@ class MedicalIntentClassifier:
                 
                 # Tạo các câu hỏi về triệu chứng từ condition_vi - RÕ RÀNG LÀ SYMPTOM_INQUIRY
                 if condition_vi and str(condition_vi) not in ['', 'nan', 'NaN', 'None']:
-                    # Các template rõ ràng cho symptom_inquiry (không có thuốc)
+                    # Các template đa dạng hơn cho symptom_inquiry
                     symptom_templates = [
                         f"Tôi bị {condition_vi.lower()}",
                         f"Tôi có triệu chứng {condition_vi.lower()}",
@@ -100,11 +101,18 @@ class MedicalIntentClassifier:
                         f"Tôi có dấu hiệu {condition_vi.lower()}",
                         f"Bị {condition_vi.lower()} phải làm sao",
                         f"Có bị {condition_vi.lower()} không",
-                        f"Đau ở {condition_vi.lower()}"
+                        f"Đau ở {condition_vi.lower()}",
+                        # Thêm variants đa dạng hơn
+                        f"Bị {condition_vi.lower()} mấy ngày nay",
+                        f"{condition_vi.lower()} từ sáng",
+                        f"Có dấu hiệu {condition_vi.lower()}",
+                        f"Cảm thấy {condition_vi.lower()}",
+                        f"Mắc phải {condition_vi.lower()}",
+                        f"{condition_vi.lower()} kéo dài"
                     ]
                     
-                    # Tăng xác suất tạo symptom samples
-                    if random.random() < 0.5:  # 50% chance to create samples
+                    # Tăng xác suất tạo symptom samples với variants
+                    if random.random() < 0.6:  # Tăng từ 50% lên 60%
                         for template in symptom_templates:
                             training_data.append((template, 'symptom_inquiry'))
                 
@@ -368,9 +376,9 @@ class MedicalIntentClassifier:
                 ("Bla bla bla bla", 'unknown')
             ]
             
-            # Thêm các ví dụ cứng - NHÂN BỘI ĐỂ CÂN BẰNG CLASSES
-            # Nhân bội minority classes để cân bằng với major classes (4000+ samples)
-            multiplier = 60  # Nhân 60 lần để có ~2000+ samples cho mỗi minority class
+            # Thêm các ví dụ cứng - CÂN BẰNG HỢP LÝ (TRÁNH OVERFITTING)
+            # Giảm multiplier để tránh overfitting
+            multiplier = 15  # Giảm xuống 15 lần để có ~750 samples cho mỗi minority class
             
             for _ in range(multiplier):
                 training_data.extend(emergency_examples)
@@ -499,16 +507,28 @@ class MedicalIntentClassifier:
             )),
             ('classifier', LogisticRegression(
                 random_state=42,
-                max_iter=1000
+                max_iter=1000,
+                class_weight='balanced',  # Tự động cân bằng trọng số cho các lớp hiếm
+                C=3.0,  # Giảm regularization để model flexible hơn (từ 1.0 lên 3.0)
+                solver='lbfgs',  # Solver tốt hơn cho multiclass
+                multi_class='ovr'  # One-vs-Rest cho stability
             ))
         ])
         
         # Train model
         self.pipeline.fit(X_train, y_train)
         
-        # Evaluate model
-        train_score = self.pipeline.score(X_train, y_train)
+        # Evaluate model - PROPER VALIDATION
+        train_score = self.pipeline.score(X_train, y_train) 
         test_score = self.pipeline.score(X_test, y_test)
+        
+        # Warning nếu train score quá cao (overfitting)
+        if train_score > 0.98:
+            print(f"⚠️  WARNING: Train accuracy = {train_score:.4f} - có thể overfitting!")
+            print(f"   Train vs Test gap: {train_score - test_score:.4f}")
+            
+        if abs(train_score - test_score) > 0.05:
+            print(f"⚠️  WARNING: Large train-test gap ({train_score - test_score:.4f}) - overfitting detected!")
         
         print(f"✅ Training accuracy: {train_score:.3f}")
         print(f"✅ Testing accuracy: {test_score:.3f}")
@@ -557,13 +577,22 @@ class MedicalIntentClassifier:
                 return 'unknown', {'unknown': 1.0}
             return 'unknown'
             
-        # Predict intent
+        # Predict intent với confidence threshold
+        probabilities = self.pipeline.predict_proba([text_clean])[0]
+        confidence_dict = dict(zip(self.pipeline.classes_, probabilities))
+        
+        # Lấy intent với highest probability
         intent = self.pipeline.predict([text_clean])[0]
+        max_confidence = max(probabilities)
+        
+        # Áp dụng confidence threshold - nếu < 20% thì trả về unknown (giảm từ 30%)
+        if max_confidence < 0.2:
+            intent = 'unknown'
+            if return_confidence:
+                confidence_dict['unknown'] = 1.0
+                return intent, confidence_dict
         
         if return_confidence:
-            # Get confidence scores
-            probabilities = self.pipeline.predict_proba([text_clean])[0]
-            confidence_dict = dict(zip(self.pipeline.classes_, probabilities))
             return intent, confidence_dict
             
         return intent
