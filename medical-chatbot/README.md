@@ -1,23 +1,104 @@
-# Medical Chatbot Project
+# 🏥 Medical Chatbot - Chatbot Y Tế Thông Minh
 
-This project is a deep learning-based medical chatbot that suggests medications based on user-reported symptoms. The chatbot utilizes a combination of natural language processing and machine learning techniques to classify symptoms and recommend appropriate medications.
+Hệ thống chatbot y tế sử dụng Deep Learning để đưa ra gợi ý thuốc không kê đơn (OTC) dựa trên triệu chứng của người dùng.
 
-## Project Structure
+## 🎯 Tính năng chính
+
+### 🔍 4 Models Deep Learning chính:
+
+1. **Intent Classifier** - Nhận diện ý định người dùng
+   - "Tôi bị đau đầu" → `triệu_chứng`
+   - "Thuốc Panadol có tác dụng gì?" → `tra_cứu_thuốc`
+   - "Tôi có thể uống paracetamol khi bị cảm không?" → `tư_vấn_sử_dụng`
+
+2. **Symptom Extractor (NER)** - Trích xuất triệu chứng và thực thể y tế
+   - "Tôi bị đau đầu và sốt nhẹ" → `{đau đầu: SYMPTOM, sốt: SYMPTOM}`
+
+3. **Drug Recommender** - Gợi ý thuốc OTC phù hợp
+   - Dựa trên triệu chứng → gợi ý top-K thuốc phù hợp nhất
+   - Sử dụng embedding similarity hoặc neural collaborative filtering
+
+4. **Risk Checker** - Kiểm tra rủi ro và chống chỉ định
+   - Input: thuốc + profile người dùng (tuổi, giới, bệnh nền)
+   - Output: `safe` / `caution` / `contraindicated`
+
+### 🚀 Pipeline hoạt động:
+```
+User Input → Intent Classification → Entity Extraction → Drug Recommendation → Risk Assessment → Final Response
+```
+
+## 📋 Cấu trúc dự án
 
 ```
-medical-chatbot
-├── src
-│   ├── main.py                     # Entry point of the application
-│   ├── models                       # Contains model definitions
-│   │   ├── symptom_classifier.py    # Class for symptom classification
-│   │   ├── drug_recommender.py      # Class for medication recommendations
-│   │   └── chatbot_model.py          # Integrates classifier and recommender
-│   ├── data                         # Data handling and preprocessing
-│   │   ├── preprocessor.py          # Functions for data preprocessing
-│   │   ├── data_loader.py           # Class for loading and batching data
-│   │   └── augmentation.py          # Data augmentation techniques
-│   ├── training                     # Training and evaluation logic
-│   │   ├── trainer.py               # Class for managing training
+medical-chatbot/
+├── src/
+│   ├── models/                    # 4 models chính
+│   │   ├── intent_classifier.py   # Model 1: Phân loại ý định
+│   │   ├── symptom_extractor.py   # Model 2: NER triệu chứng
+│   │   ├── drug_recommender.py    # Model 3: Gợi ý thuốc
+│   │   └── risk_checker.py        # Model 4: Kiểm tra rủi ro
+│   ├── medical_pipeline.py        # Pipeline kết hợp 4 models
+│   └── api/
+│       └── app.py                 # Flask API server
+├── data/
+│   ├── processed/                 # Dữ liệu đã xử lý
+│   └── models/                    # Models đã train
+├── notebooks/                     # Jupyter notebooks
+├── frontend/                      # Web interface
+├── config.yaml                    # Configuration
+├── requirements.txt               # Dependencies
+├── demo.py                        # Demo script
+└── README.md
+```
+
+## 🛠️ Cài đặt
+
+### 1. Clone repository
+```bash
+git clone <repository-url>
+cd medical-chatbot
+```
+
+### 2. Tạo virtual environment (khuyến nghị)
+```bash
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Linux/Mac
+source venv/bin/activate
+```
+
+### 3. Cài đặt dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## 🚀 Sử dụng
+
+### 1. Demo nhanh
+```bash
+python demo.py
+```
+
+### 2. Chạy API server
+```bash
+python src/api/app.py
+```
+
+### 3. Test với Pipeline
+```python
+from src.medical_pipeline import MedicalChatbotPipeline
+
+pipeline = MedicalChatbotPipeline()
+result = pipeline.process_message("Tôi bị đau đầu")
+print(result['final_response'])
+```
+
+## ⚠️ Lưu ý quan trọng
+
+- Đây chỉ là công cụ hỗ trợ tham khảo, **KHÔNG THAY THẾ** ý kiến bác sĩ
+- Chỉ gợi ý thuốc **không kê đơn (OTC)**
+- Luôn khuyên người dùng tham khảo chuyên gia y tế
 │   │   └── evaluator.py             # Class for model evaluation
 │   ├── api                          # API setup and routes
 │   │   ├── app.py                   # Flask application setup

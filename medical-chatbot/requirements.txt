@@ -1,10 +1,58 @@
-Flask==2.0.1
-tensorflow==2.6.0
-numpy==1.19.5
-pandas==1.3.3
-scikit-learn==0.24.2
-nltk==3.6.3
-requests==2.26.0
-gunicorn==20.1.0
-pydantic==1.8.2
-beautifulsoup4==4.10.0
+# Core deep learning frameworks
+tensorflow>=2.13.0
+transformers>=4.30.0
+torch>=2.0.0
+
+# TensorFlow Addons for CRF
+tensorflow-addons>=0.21.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# NLP & Text processing
+sentence-transformers>=2.2.0
+spacy>=3.6.0
+nltk>=3.8
+
+# API framework
+flask>=2.3.0
+flask-cors>=4.0.0
+
+# Configuration and utilities
+pyyaml>=6.0
+python-dotenv>=1.0.0
+
+# Data visualization (for notebooks)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Jupyter notebooks
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Model serving and deployment
+gunicorn>=21.0.0
+waitress>=2.1.0
+
+# HTTP requests
+requests>=2.31.0
+
+# Progress bars
+tqdm>=4.65.0
+
+# Async support
+aiohttp>=3.8.0
+
+# Development tools
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Medical data processing
+googletrans>=4.0.0rc1
+
+# Additional utilities
+beautifulsoup4>=4.12.0
+pydantic>=2.0.0

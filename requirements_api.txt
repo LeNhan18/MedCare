@@ -1,0 +1,10 @@
+# Medical Chatbot API Requirements
+# Chạy: pip install -r requirements_api.txt
+
+flask==3.0.0
+flask-cors==4.0.0
+pandas>=1.5.0
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.25.0
+requests>=2.25.0
+gunicorn==21.2.0
