@@ -150,7 +150,7 @@ class MedicalIntentClassifier:
                         selected_dosage = random.choice(dosage_templates)
                         training_data.append((selected_dosage, 'dosage_question'))
             
-            # Thêm các ví dụ cứng cho emergency, general_health, greeting
+            # Thêm nhiều ví dụ emergency để cân bằng dataset
             emergency_examples = [
                 ("Cấp cứu! Tôi bị đau ngực dữ dội", 'emergency'),
                 ("Khẩn cấp: bé bị sốt cao 40 độ", 'emergency'), 
@@ -161,7 +161,33 @@ class MedicalIntentClassifier:
                 ("Gọi 115! Có tai nạn xe máy", 'emergency'),
                 ("Khẩn cấp: bé nuốt phải thuốc", 'emergency'),
                 ("Cần bác sĩ gấp: đau bụng dữ dội", 'emergency'),
-                ("Cấp cứu! Bị dị ứng thuốc nghiêm trọng", 'emergency')
+                ("Cấp cứu! Bị dị ứng thuốc nghiêm trọng", 'emergency'),
+                # Thêm nhiều emergency cases hơn
+                ("Emergency! Đột quỵ não", 'emergency'),
+                ("Khẩn cấp: tim đập không đều", 'emergency'),
+                ("Cấp cứu! Mất ý thức bất ngờ", 'emergency'),
+                ("Help! Bị co giật liên tục", 'emergency'),
+                ("SOS: khó thở nghiêm trọng", 'emergency'),
+                ("Mayday! Chảy máu não", 'emergency'),
+                ("911: trẻ sơ sinh không thở", 'emergency'),
+                ("Cấp cứu: bị sốc phản vệ", 'emergency'),
+                ("Khẩn cấp! Đau tim cấp", 'emergency'),
+                ("Emergency: bong võng mạc", 'emergency'),
+                ("Cấp cứu! Ngưng tim", 'emergency'),
+                ("Help: bị điện giật", 'emergency'),
+                ("SOS! Chấn thương sọ não", 'emergency'),
+                ("Mayday: uống nhầm chất độc", 'emergency'),
+                ("911! Đẻ non khẩn cấp", 'emergency'),
+                ("Cấp cứu: gãy xương hở", 'emergency'),
+                ("Khẩn cấp! Sốc mất máu", 'emergency'),
+                ("Emergency: đuối nước", 'emergency'),
+                ("Help! Bỏng nặng diện rộng", 'emergency'),
+                ("SOS: hôn mê sâu", 'emergency'),
+                ("Mayday! Xuất huyết tiêu hóa", 'emergency'),
+                ("911: ngạt khí gas", 'emergency'),
+                ("Cấp cứu! Vỡ động mạch", 'emergency'),
+                ("Khẩn cấp: nhiễm trùng huyết", 'emergency'),
+                ("Emergency! Tắc ruột", 'emergency')
             ]
             
             health_examples = [
@@ -174,7 +200,28 @@ class MedicalIntentClassifier:
                 ("Cách giảm stress hiệu quả", 'general_health'), 
                 ("Ngủ đủ giấc quan trọng ra sao", 'general_health'),
                 ("Tác hại của thuốc lá đến sức khỏe", 'general_health'),
-                ("Cách tăng cường miễn dịch tự nhiên", 'general_health')
+                ("Cách tăng cường miễn dịch tự nhiên", 'general_health'),
+                # Thêm nhiều health examples
+                ("Dinh dưỡng cần thiết hàng ngày", 'general_health'),
+                ("Vitamin nào quan trọng nhất", 'general_health'),
+                ("Cách uống nước đủ mỗi ngày", 'general_health'),
+                ("Thời gian tốt nhất để tập thể dục", 'general_health'),
+                ("Làm sao để giảm cân hiệu quả", 'general_health'),
+                ("Cách tăng cân lành mạnh", 'general_health'),
+                ("Phòng ngừa bệnh tim mạch", 'general_health'),
+                ("Cách chăm sóc da mặt", 'general_health'),
+                ("Bảo vệ mắt khỏi ánh sáng xanh", 'general_health'),
+                ("Cách cải thiện trí nhớ", 'general_health'),
+                ("Thực phẩm tốt cho não bộ", 'general_health'),
+                ("Ngăn ngừa lão hóa da", 'general_health'),
+                ("Cách detox cơ thể tự nhiên", 'general_health'),
+                ("Tăng cường sức khỏe xương khớp", 'general_health'),
+                ("Cải thiện hệ tiêu hóa", 'general_health'),
+                ("Tăng cường sinh lực", 'general_health'),
+                ("Phòng ngừa ung thư", 'general_health'),
+                ("Cách sống thọ và khỏe mạnh", 'general_health'),
+                ("Balance hormon tự nhiên", 'general_health'),
+                ("Cách giữ tinh thần tích cực", 'general_health')
             ]
             
             greeting_examples = [
@@ -186,7 +233,23 @@ class MedicalIntentClassifier:
                 ("Tôi cần tư vấn", 'greeting'),
                 ("Cho tôi hỏi", 'greeting'),
                 ("Bạn có thể giúp tôi không", 'greeting'),
-                ("Tôi có thể hỏi gì đó được không", 'greeting')
+                ("Tôi có thể hỏi gì đó được không", 'greeting'),
+                # Thêm nhiều greetings
+                ("Good morning doctor", 'greeting'),
+                ("Buổi sáng tốt lành", 'greeting'),
+                ("Chúc ngày mới vui vẻ", 'greeting'),
+                ("Hẹn gặp lại bác sĩ", 'greeting'),
+                ("Cảm ơn bác sĩ nhiều", 'greeting'),
+                ("Tạm biệt", 'greeting'),
+                ("See you later", 'greeting'),
+                ("Goodbye doctor", 'greeting'),
+                ("Chúc sức khỏe", 'greeting'),
+                ("Have a nice day", 'greeting'),
+                ("Tôi muốn được hỗ trợ", 'greeting'),
+                ("Bạn có online không", 'greeting'),
+                ("Chatbot có hoạt động không", 'greeting'),
+                ("Ai đây", 'greeting'),
+                ("Có ai ở đây không", 'greeting')
             ]
             
             unknown_examples = [
@@ -199,7 +262,23 @@ class MedicalIntentClassifier:
                 ("random text", 'unknown'),
                 ("asdfgh", 'unknown'),
                 ("........", 'unknown'),
-                ("", 'unknown')
+                ("", 'unknown'),
+                # Thêm nhiều unknown cases
+                ("abcdefg hijklmn", 'unknown'),
+                ("9876543210", 'unknown'),
+                ("!@#$%^&*()", 'unknown'),
+                ("Lorem ipsum dolor", 'unknown'),
+                ("qwerty uiop", 'unknown'),
+                ("Blah blah blah", 'unknown'),
+                ("Gibberish text here", 'unknown'),
+                ("Nonsense words", 'unknown'),
+                ("Văn bản vô nghĩa", 'unknown'),
+                ("Từ ngữ không liên quan", 'unknown'),
+                ("Câu hỏi không rõ ràng", 'unknown'),
+                ("Text không có nghĩa", 'unknown'),
+                ("Nội dung lạ", 'unknown'),
+                ("Không thuộc y tế", 'unknown'),
+                ("Random Vietnamese text", 'unknown')
             ]
             
             # Thêm các ví dụ cứng
