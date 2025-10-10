@@ -89,34 +89,38 @@ class MedicalIntentClassifier:
                 side_effects_vi = row.get('side_effects_vi', '')
                 description_vi = row.get('medical_condition_description_vi', '')
                 
-                # Tạo các câu hỏi về triệu chứng từ condition_vi (nhiều hơn để đảm bảo đủ data)
+                # Tạo các câu hỏi về triệu chứng từ condition_vi - RÕ RÀNG LÀ SYMPTOM_INQUIRY
                 if condition_vi and str(condition_vi) not in ['', 'nan', 'NaN', 'None']:
-                    # Các template cho symptom_inquiry
+                    # Các template rõ ràng cho symptom_inquiry (không có thuốc)
                     symptom_templates = [
                         f"Tôi bị {condition_vi.lower()}",
-                        f"Có thuốc nào chữa {condition_vi.lower()} không",
+                        f"Tôi có triệu chứng {condition_vi.lower()}",
                         f"Triệu chứng {condition_vi.lower()} là gì",
                         f"Làm sao để điều trị {condition_vi.lower()}",
-                        f"Tôi có dấu hiệu {condition_vi.lower()}"
+                        f"Tôi có dấu hiệu {condition_vi.lower()}",
+                        f"Bị {condition_vi.lower()} phải làm sao",
+                        f"Có bị {condition_vi.lower()} không",
+                        f"Đau ở {condition_vi.lower()}"
                     ]
                     
-                    # Tạo nhiều samples hơn - lấy tất cả templates với xác suất 30%
-                    if random.random() < 0.3:  # 30% chance to create samples
+                    # Tăng xác suất tạo symptom samples
+                    if random.random() < 0.5:  # 50% chance to create samples
                         for template in symptom_templates:
                             training_data.append((template, 'symptom_inquiry'))
                 
-                # Tạo các câu hỏi về thuốc từ drug_name
+                # Tạo các câu hỏi về thuốc từ drug_name - RÕ RÀNG LÀ DRUG_QUESTION
                 if drug_name and str(drug_name) not in ['', 'nan', 'NaN', 'None']:
                     drug_templates = [
                         f"Thuốc {drug_name} có tác dụng gì",
-                        f"Cách sử dụng thuốc {drug_name}",
-                        f"Liều lượng thuốc {drug_name} như thế nào",
-                        f"Thuốc {drug_name} dùng để làm gì",
-                        f"Có nên uống thuốc {drug_name} không"
+                        f"Thuốc {drug_name} dùng để làm gì", 
+                        f"Có nên uống thuốc {drug_name} không",
+                        f"Thuốc {drug_name} chữa bệnh gì",
+                        f"Thông tin về thuốc {drug_name}",
+                        f"Thuốc {drug_name} như thế nào"
                     ]
                     
-                    # Tạo nhiều samples với xác suất 40%
-                    if random.random() < 0.4:  # 40% chance
+                    # Tạo nhiều samples với xác suất 35%
+                    if random.random() < 0.35:  # 35% chance
                         selected_drug_templates = random.sample(drug_templates, min(3, len(drug_templates)))
                         for template in selected_drug_templates:
                             training_data.append((template, 'drug_question'))
@@ -136,13 +140,16 @@ class MedicalIntentClassifier:
                         for template in selected_side_templates:
                             training_data.append((template, 'side_effects'))
                         
-                # Tạo câu hỏi về liều lượng
+                # Tạo câu hỏi về liều lượng - RÕ RÀNG VỀ CÁCH DÙNG/LIỀU LƯỢNG
                 if drug_name and str(drug_name) not in ['', 'nan', 'NaN', 'None']:
                     dosage_templates = [
-                        f"Liều lượng thuốc {drug_name}",
+                        f"Liều lượng thuốc {drug_name} như thế nào",
                         f"Uống {drug_name} bao nhiêu viên một lần",
                         f"Cách dùng thuốc {drug_name} đúng cách",
-                        f"Một ngày uống {drug_name} mấy lần"
+                        f"Một ngày uống {drug_name} mấy lần",
+                        f"Thuốc {drug_name} uống trước hay sau ăn",
+                        f"Cách sử dụng {drug_name}",
+                        f"Dùng {drug_name} như thế nào cho đúng"
                     ]
                     
                     # Tăng xác suất tạo dosage samples
@@ -152,42 +159,66 @@ class MedicalIntentClassifier:
             
             # Thêm nhiều ví dụ emergency để cân bằng dataset
             emergency_examples = [
+                # Cấp cứu tim mạch
                 ("Cấp cứu! Tôi bị đau ngực dữ dội", 'emergency'),
-                ("Khẩn cấp: bé bị sốt cao 40 độ", 'emergency'), 
+                ("Khẩn cấp! Đau tim cấp", 'emergency'),
+                ("Emergency! Ngưng tim", 'emergency'),
+                ("Help! Tim đập rất nhanh", 'emergency'),
+                ("SOS! Đau ngực lan ra tay", 'emergency'),
+                ("Cấp cứu! Khó thở và đau ngực", 'emergency'),
+                
+                # Cấp cứu hô hấp
                 ("Gọi bác sĩ ngay! Tôi không thở được", 'emergency'),
-                ("Cần cấp cứu: bị ngộ độc thực phẩm", 'emergency'),
-                ("Khẩn cấp! Bị chảy máu không cầm được", 'emergency'),
-                ("Cấp cứu: có người bị ngất xỉu", 'emergency'),
-                ("Gọi 115! Có tai nạn xe máy", 'emergency'),
-                ("Khẩn cấp: bé nuốt phải thuốc", 'emergency'),
-                ("Cần bác sĩ gấp: đau bụng dữ dội", 'emergency'),
-                ("Cấp cứu! Bị dị ứng thuốc nghiêm trọng", 'emergency'),
-                # Thêm nhiều emergency cases hơn
+                ("SOS: khó thở nghiêm trọng", 'emergency'),
+                ("Cấp cứu! Ngạt thở", 'emergency'),
+                ("Emergency! Suy hô hấp", 'emergency'),
+                ("Help! Thở khó khăn", 'emergency'),
+                
+                # Cấp cứu thần kinh
                 ("Emergency! Đột quỵ não", 'emergency'),
-                ("Khẩn cấp: tim đập không đều", 'emergency'),
                 ("Cấp cứu! Mất ý thức bất ngờ", 'emergency'),
                 ("Help! Bị co giật liên tục", 'emergency'),
-                ("SOS: khó thở nghiêm trọng", 'emergency'),
-                ("Mayday! Chảy máu não", 'emergency'),
-                ("911: trẻ sơ sinh không thở", 'emergency'),
-                ("Cấp cứu: bị sốc phản vệ", 'emergency'),
-                ("Khẩn cấp! Đau tim cấp", 'emergency'),
-                ("Emergency: bong võng mạc", 'emergency'),
-                ("Cấp cứu! Ngưng tim", 'emergency'),
-                ("Help: bị điện giật", 'emergency'),
                 ("SOS! Chấn thương sọ não", 'emergency'),
-                ("Mayday: uống nhầm chất độc", 'emergency'),
-                ("911! Đẻ non khẩn cấp", 'emergency'),
+                ("Khẩn cấp! Hôn mê sâu", 'emergency'),
+                ("Cấp cứu! Tôi bị ngất", 'emergency'),
+                ("Emergency! Mất ý thức", 'emergency'),
+                
+                # Chấn thương
+                ("Gọi 115! Có tai nạn xe máy", 'emergency'),
                 ("Cấp cứu: gãy xương hở", 'emergency'),
-                ("Khẩn cấp! Sốc mất máu", 'emergency'),
-                ("Emergency: đuối nước", 'emergency'),
                 ("Help! Bỏng nặng diện rộng", 'emergency'),
-                ("SOS: hôn mê sâu", 'emergency'),
-                ("Mayday! Xuất huyết tiêu hóa", 'emergency'),
+                ("SOS! Chảy máu nhiều quá", 'emergency'),
+                ("Khẩn cấp! Bị chảy máu không cầm được", 'emergency'),
+                ("Emergency! Chấn thương nặng", 'emergency'),
+                ("Cấp cứu! Vết thương sâu", 'emergency'),
+                
+                # Ngộ độc & dị ứng
+                ("Cần cấp cứu: bị ngộ độc thực phẩm", 'emergency'),
+                ("Cấp cứu! Bị dị ứng thuốc nghiêm trọng", 'emergency'),
+                ("Khẩn cấp: bé nuốt phải thuốc", 'emergency'),
+                ("Mayday: uống nhầm chất độc", 'emergency'),
+                ("Emergency! Sốc phản vệ", 'emergency'),
+                ("SOS! Ngộ độc nặng", 'emergency'),
+                
+                # Sốt cao/trẻ em
+                ("Khẩn cấp: bé bị sốt cao 40 độ", 'emergency'),
+                ("911: trẻ sơ sinh không thở", 'emergency'),
+                ("Cấp cứu! Trẻ co giật do sốt", 'emergency'),
+                ("Emergency! Bé mất nước nặng", 'emergency'),
+                
+                # Các tình huống khác
+                ("Cấp cứu: có người bị ngất xỉu", 'emergency'),
+                ("Cần bác sĩ gấp: đau bụng dữ dội", 'emergency'),
+                ("Help: bị điện giật", 'emergency'),
                 ("911: ngạt khí gas", 'emergency'),
+                ("Emergency: đuối nước", 'emergency'),
+                ("Mayday! Xuất huyết tiêu hóa", 'emergency'),
                 ("Cấp cứu! Vỡ động mạch", 'emergency'),
                 ("Khẩn cấp: nhiễm trùng huyết", 'emergency'),
-                ("Emergency! Tắc ruột", 'emergency')
+                ("Emergency! Tắc ruột", 'emergency'),
+                ("SOS! Sốc mất máu", 'emergency'),
+                ("Mayday! Chảy máu não", 'emergency'),
+                ("911! Đẻ non khẩn cấp", 'emergency')
             ]
             
             health_examples = [
@@ -225,67 +256,127 @@ class MedicalIntentClassifier:
             ]
             
             greeting_examples = [
+                # Chào hỏi cơ bản
                 ("Xin chào", 'greeting'),
                 ("Chào bác sĩ", 'greeting'), 
                 ("Hi", 'greeting'),
                 ("Hello", 'greeting'),
                 ("Chào em", 'greeting'),
+                ("Chào bạn", 'greeting'),
+                ("Hey", 'greeting'),
+                ("Hế lô", 'greeting'),
+                ("Chào anh", 'greeting'),
+                ("Chào chị", 'greeting'),
+                
+                # Chào hỏi lịch sự
+                ("Good morning doctor", 'greeting'),
+                ("Buổi sáng tốt lành", 'greeting'),
+                ("Chúc ngày mới vui vẻ", 'greeting'),
+                ("Chào buổi chiều", 'greeting'),
+                ("Chào buổi tối", 'greeting'),
+                ("Kính chào bác sĩ", 'greeting'),
+                ("Chào anh bác sĩ", 'greeting'),
+                ("Chào chị y tá", 'greeting'),
+                
+                # Yêu cầu hỗ trợ
                 ("Tôi cần tư vấn", 'greeting'),
                 ("Cho tôi hỏi", 'greeting'),
                 ("Bạn có thể giúp tôi không", 'greeting'),
                 ("Tôi có thể hỏi gì đó được không", 'greeting'),
-                # Thêm nhiều greetings
-                ("Good morning doctor", 'greeting'),
-                ("Buổi sáng tốt lành", 'greeting'),
-                ("Chúc ngày mới vui vẻ", 'greeting'),
-                ("Hẹn gặp lại bác sĩ", 'greeting'),
-                ("Cảm ơn bác sĩ nhiều", 'greeting'),
+                ("Tôi muốn được hỗ trợ", 'greeting'),
+                ("Bạn có online không", 'greeting'),
+                ("Chatbot có hoạt động không", 'greeting'),
+                ("Có ai ở đây không", 'greeting'),
+                ("Bạn có thể tư vấn giúp tôi không", 'greeting'),
+                ("Tôi có câu hỏi", 'greeting'),
+                
+                # Chào tạm biệt
                 ("Tạm biệt", 'greeting'),
                 ("See you later", 'greeting'),
                 ("Goodbye doctor", 'greeting'),
                 ("Chúc sức khỏe", 'greeting'),
                 ("Have a nice day", 'greeting'),
-                ("Tôi muốn được hỗ trợ", 'greeting'),
-                ("Bạn có online không", 'greeting'),
-                ("Chatbot có hoạt động không", 'greeting'),
+                ("Hẹn gặp lại bác sĩ", 'greeting'),
+                ("Cảm ơn bác sĩ nhiều", 'greeting'),
+                ("Bye bye", 'greeting'),
+                ("Chúc bác sĩ khỏe mạnh", 'greeting'),
+                ("Cảm ơn đã tư vấn", 'greeting'),
+                
+                # Câu hỏi mở đầu
                 ("Ai đây", 'greeting'),
-                ("Có ai ở đây không", 'greeting')
+                ("Bạn là ai", 'greeting'),
+                ("Đây có phải chatbot y tế không", 'greeting'),
+                ("Tôi đang nói chuyện với ai", 'greeting'),
+                ("Bạn có thể làm gì", 'greeting')
             ]
             
             unknown_examples = [
+                # Gibberish và random text
                 ("xyz abc", 'unknown'),
                 ("12345", 'unknown'), 
+                ("asdfgh", 'unknown'),
+                ("qwerty uiop", 'unknown'),
+                ("abcdefg hijklmn", 'unknown'),
+                ("9876543210", 'unknown'),
+                ("!@#$%^&*()", 'unknown'),
+                ("Lorem ipsum dolor", 'unknown'),
+                ("Blah blah blah", 'unknown'),
+                ("Gibberish text here", 'unknown'),
+                ("Nonsense words", 'unknown'),
+                ("........", 'unknown'),
+                ("", 'unknown'),
+                
+                # Câu hỏi không liên quan y tế
+                ("Bạn tên gì", 'unknown'),
+                ("Hôm nay trời đẹp", 'unknown'),
+                ("Mấy giờ rồi", 'unknown'),
+                ("Ở đâu vậy", 'unknown'),
+                ("Bao nhiêu tuổi", 'unknown'),
+                ("Có người yêu chưa", 'unknown'),
+                ("Thích ăn gì", 'unknown'),
+                ("Đi học chưa", 'unknown'),
+                ("Làm việc ở đâu", 'unknown'),
+                ("Có con chưa", 'unknown'),
+                
+                # Chủ đề không liên quan
+                ("Kết quả bóng đá hôm qua", 'unknown'),
+                ("Giá xăng hôm nay", 'unknown'),
+                ("Thời tiết như thế nào", 'unknown'),
+                ("Phim hay gì không", 'unknown'),
+                ("Nhạc nào hay", 'unknown'),
+                ("Chơi game gì", 'unknown'),
+                ("Mua sắm ở đâu", 'unknown'),
+                ("Du lịch đâu vui", 'unknown'),
+                ("Món ăn ngon", 'unknown'),
+                ("Quán cà phê nào ngon", 'unknown'),
+                
+                # Text vô nghĩa
                 ("không hiểu", 'unknown'),
                 ("???", 'unknown'),
                 ("haha hihi", 'unknown'),
                 ("test test", 'unknown'),
                 ("random text", 'unknown'),
-                ("asdfgh", 'unknown'),
-                ("........", 'unknown'),
-                ("", 'unknown'),
-                # Thêm nhiều unknown cases
-                ("abcdefg hijklmn", 'unknown'),
-                ("9876543210", 'unknown'),
-                ("!@#$%^&*()", 'unknown'),
-                ("Lorem ipsum dolor", 'unknown'),
-                ("qwerty uiop", 'unknown'),
-                ("Blah blah blah", 'unknown'),
-                ("Gibberish text here", 'unknown'),
-                ("Nonsense words", 'unknown'),
                 ("Văn bản vô nghĩa", 'unknown'),
                 ("Từ ngữ không liên quan", 'unknown'),
                 ("Câu hỏi không rõ ràng", 'unknown'),
                 ("Text không có nghĩa", 'unknown'),
                 ("Nội dung lạ", 'unknown'),
                 ("Không thuộc y tế", 'unknown'),
-                ("Random Vietnamese text", 'unknown')
+                ("Random Vietnamese text", 'unknown'),
+                ("Aaaaa bbbb cccc", 'unknown'),
+                ("Lalala nanana", 'unknown'),
+                ("Bla bla bla bla", 'unknown')
             ]
             
-            # Thêm các ví dụ cứng
-            training_data.extend(emergency_examples)
-            training_data.extend(health_examples)
-            training_data.extend(greeting_examples)
-            training_data.extend(unknown_examples)
+            # Thêm các ví dụ cứng - NHÂN BỘI ĐỂ CÂN BẰNG CLASSES
+            # Nhân bội minority classes để cân bằng với major classes (4000+ samples)
+            multiplier = 60  # Nhân 60 lần để có ~2000+ samples cho mỗi minority class
+            
+            for _ in range(multiplier):
+                training_data.extend(emergency_examples)
+                training_data.extend(health_examples) 
+                training_data.extend(greeting_examples)
+                training_data.extend(unknown_examples)
             
             print(f"Đã tạo {len(training_data)} mẫu training từ dataset thực tế")
             return training_data
