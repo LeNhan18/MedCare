@@ -1,0 +1,128 @@
+{
+  "name": "Medical Chatbot - Vietnamese Native",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "medical-chat",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "webhook-1",
+      "name": "Webhook - Chat Input",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [240, 300],
+      "webhookId": "medical-chat-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "const message = $input.first().json.message?.toLowerCase() || '';\nconst userId = $input.first().json.userId || 'anonymous';\nconst sessionId = $input.first().json.sessionId || Date.now().toString();\n\nconst symptomKeywords = {\n  'đau_đầu': ['đau đầu', 'nhức đầu', 'migraine', 'headache', 'đau nửa đầu'],\n  'sốt': ['sốt', 'fever', 'nóng người', 'ốm', 'bị sốt'],\n  'ho': ['ho', 'cough', 'ho khan', 'ho có đờm', 'ho nhiều'],\n  'đau_bụng': ['đau bụng', 'stomach pain', 'đau dạ dày', 'đau tụt'],\n  'cảm_lạnh': ['cảm lạnh', 'cold', 'flu', 'cúm', 'nghẹt mũi'],\n  'mụn_trứng_cá': ['mụn', 'acne', 'mụn trứng cá', 'da mụn', 'mụn mủ'],\n  'tiêu_chảy': ['tiêu chảy', 'diarrhea', 'đi lỏng', 'đi nước'],\n  'táo_bón': ['táo bón', 'constipation', 'khó đi đại tiện'],\n  'viêm_họng': ['viêm họng', 'sore throat', 'đau họng', 'họng đau'],\n  'chóng_mặt': ['chóng mặt', 'dizzy', 'hoa mắt', 'đầu quay']\n};\n\nlet detectedSymptoms = [];\nfor (let symptom in symptomKeywords) {\n  for (let keyword of symptomKeywords[symptom]) {\n    if (message.includes(keyword)) {\n      detectedSymptoms.push(symptom);\n      break;\n    }\n  }\n}\n\nlet severity = 'mild';\nif (message.includes('rất') || message.includes('nhiều') || message.includes('nặng')) {\n  severity = 'severe';\n} else if (message.includes('hơi') || message.includes('nhẹ')) {\n  severity = 'mild';\n} else {\n  severity = 'moderate';\n}\n\ndetectedSymptoms = [...new Set(detectedSymptoms)];\n\nreturn {\n  json: {\n    originalMessage: $input.first().json.message,\n    detectedSymptoms: detectedSymptoms,\n    severity: severity,\n    userId: userId,\n    sessionId: sessionId,\n    timestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "code-symptom-detection",
+      "name": "Symptom Detection",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const medicalDataSample = [\n  {\n    \"drug_name\": \"Paracetamol\",\n    \"medical_condition\": \"Pain\",\n    \"medical_condition_vi\": \"đau đầu\",\n    \"side_effects_vi\": \"buồn nôn, chóng mặt\",\n    \"drug_classes_vi\": \"thuốc giảm đau\",\n    \"rx_otc\": \"OTC\",\n    \"rating\": 8.5\n  },\n  {\n    \"drug_name\": \"Aspirin\",\n    \"medical_condition\": \"Headache\", \n    \"medical_condition_vi\": \"đau đầu\",\n    \"side_effects_vi\": \"đau dạ dày\",\n    \"drug_classes_vi\": \"thuốc chống viêm\",\n    \"rx_otc\": \"OTC\",\n    \"rating\": 7.8\n  },\n  {\n    \"drug_name\": \"Ibuprofen\",\n    \"medical_condition\": \"Pain\",\n    \"medical_condition_vi\": \"đau đầu\",\n    \"side_effects_vi\": \"buồn nôn\",\n    \"drug_classes_vi\": \"thuốc giảm đau\",\n    \"rx_otc\": \"OTC\",\n    \"rating\": 8.2\n  },\n  {\n    \"drug_name\": \"Cough Syrup\",\n    \"medical_condition\": \"Cough\",\n    \"medical_condition_vi\": \"ho\",\n    \"side_effects_vi\": \"buồn ngủ\",\n    \"drug_classes_vi\": \"thuốc ho\",\n    \"rx_otc\": \"OTC\",\n    \"rating\": 7.5\n  },\n  {\n    \"drug_name\": \"Fever Reducer\",\n    \"medical_condition\": \"Fever\",\n    \"medical_condition_vi\": \"sốt\",\n    \"side_effects_vi\": \"chóng mặt\",\n    \"drug_classes_vi\": \"thuốc hạ sốt\",\n    \"rx_otc\": \"OTC\",\n    \"rating\": 8.0\n  },\n  {\n    \"drug_name\": \"Antacid\",\n    \"medical_condition\": \"Stomach Pain\",\n    \"medical_condition_vi\": \"đau bụng\",\n    \"side_effects_vi\": \"táo bón\",\n    \"drug_classes_vi\": \"thuốc dạ dày\",\n    \"rx_otc\": \"OTC\",\n    \"rating\": 7.3\n  }\n];\n\nconst symptoms = $input.first().json.detectedSymptoms;\nconst severity = $input.first().json.severity;\n\nconst medicalData = medicalDataSample;\nlet foundDrugs = [];\n\nfor (let symptom of symptoms) {\n  const symptomSearch = symptom.replace('_', ' ');\n  \n  const matchingDrugs = medicalData.filter(drug => {\n    const condition = (drug.medical_condition_vi || '').toLowerCase();\n    const conditionEn = (drug.medical_condition || '').toLowerCase();\n    \n    return condition.includes(symptomSearch) || \n           conditionEn.includes(symptomSearch) ||\n           condition.includes(symptom.replace('_', ''));\n  });\n  \n  foundDrugs.push(...matchingDrugs);\n}\n\nfoundDrugs.sort((a, b) => {\n  if (severity === 'mild') {\n    if (a.rx_otc === 'OTC' && b.rx_otc !== 'OTC') return -1;\n    if (b.rx_otc === 'OTC' && a.rx_otc !== 'OTC') return 1;\n  }\n  return (parseFloat(b.rating) || 0) - (parseFloat(a.rating) || 0);\n});\n\nconst uniqueDrugs = foundDrugs.filter((drug, index, self) => \n  index === self.findIndex(d => d.drug_name === drug.drug_name)\n);\n\nreturn {\n  json: {\n    symptoms: symptoms,\n    severity: severity,\n    recommendedDrugs: uniqueDrugs.slice(0, 5),\n    totalFound: uniqueDrugs.length,\n    userId: $input.first().json.userId,\n    sessionId: $input.first().json.sessionId,\n    searchTimestamp: new Date().toISOString()\n  }\n};"
+      },
+      "id": "code-drug-search",
+      "name": "Drug Search Engine",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const symptoms = $input.first().json.symptoms || [];\nconst drugs = $input.first().json.recommendedDrugs || [];\nconst severity = $input.first().json.severity;\nconst originalMessage = $input.first().json.originalMessage || '';\n\nlet response = \"\";\nlet responseType = \"\";\n\nif (symptoms.length === 0) {\n  responseType = \"no_symptoms\";\n  response = `Xin chào! Tôi không thể xác định triệu chứng cụ thể từ tin nhắn: \"${originalMessage}\".\\n\\n`;\n  response += `Bạn có thể mô tả rõ hơn triệu chứng của mình không? Ví dụ:\\n`;\n  response += `• \"Tôi bị đau đầu\"\\n`;\n  response += `• \"Tôi bị sốt và ho\"\\n`;\n  response += `• \"Tôi bị đau bụng\"\\n\\n`;\n  response += `Tôi có thể giúp tư vấn thuốc cho các triệu chứng phổ biến! 😊`;\n} else if (drugs.length === 0) {\n  responseType = \"no_drugs\";\n  const symptomText = symptoms.map(s => s.replace(/_/g, ' ')).join(', ');\n  response = `Tôi đã hiểu bạn có triệu chứng: **${symptomText}**.\\n\\n`;\n  response += `Tuy nhiên, tôi không tìm thấy thuốc phù hợp trong cơ sở dữ liệu hiện tại.\\n\\n`;\n  response += `🏥 **Gợi ý:**\\n`;\n  response += `• Thăm khám bác sĩ để được tư vấn chính xác\\n`;\n  response += `• Liên hệ dược sĩ tại nhà thuốc gần nhất\\n`;\n  response += `• Gọi hotline y tế: 19003116`;\n} else {\n  responseType = \"recommendations\";\n  const symptomText = symptoms.map(s => s.replace(/_/g, ' ')).join(', ');\n  const severityText = severity === 'mild' ? 'nhẹ' : severity === 'severe' ? 'nặng' : 'vừa phải';\n  \n  response = `Dựa trên triệu chứng **\"${symptomText}\"** (mức độ: ${severityText}), tôi gợi ý các thuốc sau:\\n\\n`;\n  \n  drugs.forEach((drug, index) => {\n    response += `**${index + 1}. ${drug.drug_name}** `;\n    response += `${drug.rx_otc === 'OTC' ? '🟢' : '🔴'} ${drug.rx_otc}\\n`;\n    \n    if (drug.medical_condition_vi) {\n      response += `   📋 Dùng cho: ${drug.medical_condition_vi}\\n`;\n    }\n    \n    if (drug.drug_classes_vi) {\n      response += `   💊 Loại thuốc: ${drug.drug_classes_vi}\\n`;\n    }\n    \n    if (drug.rating) {\n      const stars = '⭐'.repeat(Math.round(parseFloat(drug.rating) / 2));\n      response += `   ${stars} Đánh giá: ${drug.rating}/10\\n`;\n    }\n    \n    if (drug.side_effects_vi) {\n      response += `   ⚠️ Tác dụng phụ: ${drug.side_effects_vi}\\n`;\n    }\n    \n    response += `\\n`;\n  });\n  \n  response += `\\n🛡️ **LưU Ý QUAN TRỌNG:**\\n`;\n  response += `• 🟢 OTC: Không cần toa bác sĩ\\n`;\n  response += `• 🔴 Rx: Cần có toa bác sĩ\\n`;\n  response += `• Thông tin này chỉ mang tính chất tham khảo\\n`;\n  response += `• Tham khảo ý kiến bác sĩ/dược sĩ trước khi sử dụng\\n`;\n  response += `• Đọc kỹ hướng dẫn sử dụng\\n`;\n  response += `• Ngưng sử dụng nếu có phản ứng bất thường\\n\\n`;\n  \n  if (severity === 'severe') {\n    response += `🚨 **CẢNH BÁO**: Triệu chứng nặng - Nên thăm khám bác sĩ ngay!`;\n  }\n}\n\nreturn {\n  json: {\n    response: response,\n    responseType: responseType,\n    metadata: {\n      symptoms: symptoms,\n      symptomsCount: symptoms.length,\n      drugsFound: drugs.length,\n      severity: severity,\n      originalMessage: originalMessage,\n      timestamp: new Date().toISOString(),\n      language: 'vi'\n    },\n    userId: $input.first().json.userId,\n    sessionId: $input.first().json.sessionId\n  }\n};"
+      },
+      "id": "code-response-generator", 
+      "name": "Response Generator",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{{ $json }}"
+      },
+      "id": "webhook-response",
+      "name": "Webhook Response",
+      "type": "n8n-nodes-base.webhookResponse",
+      "typeVersion": 1,
+      "position": [1120, 300]
+    }
+  ],
+  "connections": {
+    "Webhook - Chat Input": {
+      "main": [
+        [
+          {
+            "node": "Symptom Detection",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Symptom Detection": {
+      "main": [
+        [
+          {
+            "node": "Drug Search Engine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drug Search Engine": {
+      "main": [
+        [
+          {
+            "node": "Response Generator",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Response Generator": {
+      "main": [
+        [
+          {
+            "node": "Webhook Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2025-10-10T10:00:00.000Z",
+      "updatedAt": "2025-10-10T10:00:00.000Z",
+      "id": "1",
+      "name": "medical"
+    },
+    {
+      "createdAt": "2025-10-10T10:00:00.000Z",
+      "updatedAt": "2025-10-10T10:00:00.000Z",
+      "id": "2",
+      "name": "vietnamese"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2025-10-10T10:00:00.000Z",
+  "versionId": "v3-medical-vietnamese-native"
+}

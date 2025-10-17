@@ -1,0 +1,219 @@
+{
+  "name": "Medical Chatbot Workflow - Vietnamese",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "0c6b1b2e-8f4c-4a1a-9b3d-2e5f6a7b8c9d",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [580, 300]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "medical-chat",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "1d7c2c3f-9e5d-4b2b-ac4e-3f6e7b8c9d0e",
+      "name": "Webhook Chat Input",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [580, 200],
+      "webhookId": "medical-chatbot-webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "const userMessage = $input.all()[0].json.body?.message || $input.all()[0].json.message || 'Tôi cần tư vấn thuốc';\nconst userId = $input.all()[0].json.body?.userId || $input.all()[0].json.userId || 'user_001';\nconst sessionId = $input.all()[0].json.body?.sessionId || Date.now().toString();\n\nconst cleanMessage = userMessage.toLowerCase().replace(/[^\\wàáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ\\s]/gi, '').trim();\n\nlet intent = 'general_inquiry';\nlet symptoms = [];\nlet severity = 'mild';\n\nconst symptomKeywords = {\n  'đau_đầu': ['đau đầu', 'nhức đầu', 'đau nửa đầu', 'migraine', 'headache'],\n  'sốt': ['sốt', 'nóng sốt', 'fever', 'bốc hỏa'],\n  'ho': ['ho', 'cough', 'ho khan', 'ho có đờm'],\n  'đau_bụng': ['đau bụng', 'đau dạ dày', 'stomach pain', 'đau tụy'],\n  'mụn_trứng_cá': ['mụn', 'mụn trứng cá', 'acne', 'mụn đầu đen'],\n  'giảm_cân': ['giảm cân', 'béo phì', 'weight loss', 'diet', 'slim'],\n  'tiêu_chảy': ['tiêu chảy', 'diarrhea', 'đi ngoài', 'lỏng'],\n  'táo_bón': ['táo bón', 'constipation', 'khó đi ngoài'],\n  'dị_ứng': ['dị ứng', 'allergy', 'phát ban', 'ngứa'],\n  'cảm_cúm': ['cảm cúm', 'cảm lạnh', 'flu', 'cold', 'nghẹt mũi']\n};\n\nfor (const [symptom, keywords] of Object.entries(symptomKeywords)) {\n  for (const keyword of keywords) {\n    if (cleanMessage.includes(keyword)) {\n      symptoms.push(symptom);\n      intent = 'symptom_inquiry';\n      break;\n    }\n  }\n}\n\nif (cleanMessage.includes('rất đau') || cleanMessage.includes('severe') || cleanMessage.includes('dữ dội')) {\n  severity = 'severe';\n} else if (cleanMessage.includes('khá đau') || cleanMessage.includes('moderate') || cleanMessage.includes('vừa')) {\n  severity = 'moderate';\n}\n\nif (cleanMessage.includes('tác dụng phụ') || cleanMessage.includes('side effect')) {\n  intent = 'side_effects_inquiry';\n} else if (cleanMessage.includes('liều dùng') || cleanMessage.includes('dosage') || cleanMessage.includes('cách uống')) {\n  intent = 'dosage_inquiry';\n} else if (cleanMessage.includes('tương tác thuốc') || cleanMessage.includes('drug interaction')) {\n  intent = 'drug_interaction';\n}\n\nreturn {\n  json: {\n    userId: userId,\n    sessionId: sessionId,\n    originalMessage: userMessage,\n    cleanMessage: cleanMessage,\n    intent: intent,\n    symptoms: symptoms,\n    severity: severity,\n    timestamp: new Date().toISOString(),\n    language: 'vi'\n  }\n};"
+      },
+      "id": "2e8d3d4e-af6e-5c3c-bd5f-4e7f8c9d0e1f",
+      "name": "Process User Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [820, 250]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "intent_symptom",
+              "leftValue": "={{ $json.intent }}",
+              "rightValue": "symptom_inquiry",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "3f9e4e5f-be7f-6d4d-ce6e-5f8e9d0e1f2e",
+      "name": "Route by Intent",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1060, 250]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3001/api/search-drugs",
+        "sendQuery": false,
+        "sendHeaders": false,
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={\n  \"symptoms\": {{ JSON.stringify($json.symptoms) }},\n  \"severity\": \"{{ $json.severity }}\",\n  \"language\": \"vi\"\n}",
+        "options": {}
+      },
+      "id": "4e0f5f6e-cf8e-7e5e-df7f-6f9f0e1f2f3f",
+      "name": "Search Medical Database",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1300, 150]
+    },
+    {
+      "parameters": {
+        "jsCode": "const searchResults = $input.all()[0].json;\nconst userData = $('Process User Input').all()[0].json;\n\nlet response = {\n  success: true,\n  userId: userData.userId,\n  sessionId: userData.sessionId,\n  intent: userData.intent,\n  recommendations: [],\n  message: '',\n  timestamp: new Date().toISOString()\n};\n\nif (searchResults.drugs && searchResults.drugs.length > 0) {\n  const topDrugs = searchResults.drugs.slice(0, 3);\n  \n  response.recommendations = topDrugs.map(drug => ({\n    drugName: drug.drug_name,\n    condition: drug.condition_vi || drug.medical_condition,\n    description: drug.description_vi ? drug.description_vi.substring(0, 200) + '...' : 'Không có mô tả chi tiết',\n    drugClass: drug.drug_class_vi || drug.drug_classes,\n    rxOtc: drug.rx_otc,\n    rating: drug.rating,\n    sideEffects: drug.side_effects_vi ? drug.side_effects_vi.substring(0, 150) + '...' : 'Vui lòng tham khảo bác sĩ về tác dụng phụ'\n  }));\n  \n  const symptomsText = userData.symptoms.join(', ').replace(/_/g, ' ');\n  response.message = `🏥 **Tư vấn y tế cho triệu chứng: ${symptomsText}**\\n\\n` +\n    `Dựa trên triệu chứng bạn mô tả, tôi gợi ý ${topDrugs.length} loại thuốc phù hợp:\\n\\n`;\n  \n  topDrugs.forEach((drug, index) => {\n    response.message += `**${index + 1}. ${drug.drug_name}** ${drug.rx_otc === 'OTC' ? '(Không cần toa)' : '(Cần toa bác sĩ)'}\\n`;\n    response.message += `📋 Điều trị: ${drug.condition_vi || drug.medical_condition}\\n`;\n    response.message += `⭐ Đánh giá: ${drug.rating}/10\\n`;\n    response.message += `💊 Nhóm thuốc: ${drug.drug_class_vi || drug.drug_classes}\\n\\n`;\n  });\n  \n  response.message += `⚠️ **Lưu ý quan trọng:**\\n` +\n    `• Đây chỉ là tư vấn tham khảo\\n` +\n    `• Vui lòng tham khảo ý kiến bác sĩ trước khi sử dụng\\n` +\n    `• Đọc kỹ hướng dẫn sử dụng trên bao bì\\n` +\n    `• Không tự ý tăng giảm liều lượng`;\n    \n} else {\n  response.success = false;\n  response.message = `❓ **Không tìm thấy thuốc phù hợp**\\n\\n` +\n    `Rất tiếc, tôi chưa tìm được thuốc phù hợp với triệu chứng \\\"${userData.originalMessage}\\\".\\n\\n` +\n    `🏥 **Gợi ý:**\\n` +\n    `• Mô tả chi tiết hơn về triệu chứng\\n` +\n    `• Thăm khám trực tiếp tại phòng khám\\n` +\n    `• Gọi hotline tư vấn y tế: 19003456\\n\\n` +\n    `💬 **Ví dụ câu hỏi tốt:**\\n` +\n    `\\\"Tôi bị đau đầu và sốt nhẹ\\\"\\n` +\n    `\\\"Con tôi bị ho khan từ 3 ngày nay\\\"`;\n}\n\nreturn { json: response };"
+      },
+      "id": "5f1e6e7f-de9f-8f6f-ee8f-7e0e1f2f3e4f",
+      "name": "Process Drug Recommendations",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 150]
+    },
+    {
+      "parameters": {
+        "jsCode": "const userData = $('Process User Input').all()[0].json;\n\nlet response = {\n  success: true,\n  userId: userData.userId,\n  sessionId: userData.sessionId,\n  intent: userData.intent,\n  message: '',\n  timestamp: new Date().toISOString()\n};\n\nswitch(userData.intent) {\n  case 'side_effects_inquiry':\n    response.message = `💊 **Hỏi về tác dụng phụ**\\n\\n` +\n      `Để tư vấn về tác dụng phụ, tôi cần biết tên thuốc cụ thể.\\n\\n` +\n      `🔍 **Vui lòng cung cấp:**\\n` +\n      `• Tên thuốc chính xác\\n` +\n      `• Triệu chứng bạn đang gặp\\n` +\n      `• Thời gian sử dụng thuốc\\n\\n` +\n      `💬 **Ví dụ:** \\\"Paracetamol có tác dụng phụ gì?\\\"`;\n    break;\n    \n  case 'dosage_inquiry':\n    response.message = `📋 **Hỏi về liều dùng**\\n\\n` +\n      `Liều dùng thuốc phụ thuộc vào nhiều yếu tố:\\n\\n` +\n      `👤 **Thông tin cần thiết:**\\n` +\n      `• Tuổi và cân nặng\\n` +\n      `• Tình trạng sức khỏe hiện tại\\n` +\n      `• Các thuốc đang dùng kèm\\n\\n` +\n      `⚠️ **Khuyến cáo:** Luôn tuân theo chỉ định của bác sĩ hoặc hướng dẫn trên bao bì thuốc.`;\n    break;\n    \n  case 'drug_interaction':\n    response.message = `⚠️ **Tương tác thuốc**\\n\\n` +\n      `Tương tác thuốc có thể nguy hiểm. Cần thông tin chi tiết:\\n\\n` +\n      `💊 **Cần biết:**\\n` +\n      `• Danh sách tất cả thuốc đang dùng\\n` +\n      `• Thực phẩm chức năng, vitamin\\n` +\n      `• Tình trạng bệnh lý\\n\\n` +\n      `🏥 **Khuyến nghị:** Tham khảo dược sĩ hoặc bác sĩ để kiểm tra tương tác thuốc an toàn.`;\n    break;\n    \n  default:\n    response.message = `👋 **Chào mừng đến với Medical Chatbot!**\\n\\n` +\n      `🏥 Tôi có thể giúp bạn:\\n` +\n      `• Tư vấn thuốc không cần toa cho triệu chứng thường gặp\\n` +\n      `• Thông tin về tác dụng phụ\\n` +\n      `• Hướng dẫn sử dụng thuốc cơ bản\\n\\n` +\n      `💬 **Ví dụ câu hỏi:**\\n` +\n      `\\\"Tôi bị đau đầu, nên uống thuốc gì?\\\"\\n` +\n      `\\\"Thuốc paracetamol có tác dụng phụ gì?\\\"\\n` +\n      `\\\"Tôi bị ho khan, có thuốc OTC nào không?\\\"\\n\\n` +\n      `⚠️ **Lưu ý:** Đây chỉ là tư vấn tham khảo, không thay thế ý kiến bác sĩ chuyên khoa.`;\n}\n\nreturn { json: response };"
+      },
+      "id": "6e2f7f8e-ef0e-9e7e-ff9e-8f1f2f3f4f5f",
+      "name": "Handle General Inquiries",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1300, 350]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "7f3e8e9f-fe1f-af8f-ee0f-9f2f3f4f5f6f",
+      "name": "Send Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1780, 250]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Process User Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook Chat Input": {
+      "main": [
+        [
+          {
+            "node": "Process User Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process User Input": {
+      "main": [
+        [
+          {
+            "node": "Route by Intent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route by Intent": {
+      "main": [
+        [
+          {
+            "node": "Search Medical Database",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Handle General Inquiries",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search Medical Database": {
+      "main": [
+        [
+          {
+            "node": "Process Drug Recommendations",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Process Drug Recommendations": {
+      "main": [
+        [
+          {
+            "node": "Send Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Handle General Inquiries": {
+      "main": [
+        [
+          {
+            "node": "Send Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "1.0.0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "medical-chatbot-workflow"
+  },
+  "id": "medical-chatbot-workflow",
+  "tags": [
+    {
+      "createdAt": "2025-10-10T10:00:00.000Z",
+      "updatedAt": "2025-10-10T10:00:00.000Z",
+      "id": "medical-ai",
+      "name": "Medical AI"
+    }
+  ]
+}
