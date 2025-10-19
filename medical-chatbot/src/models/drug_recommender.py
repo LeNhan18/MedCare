@@ -166,7 +166,16 @@ class DrugRecommender:
              "dosage": "thoa mỏng 2-3 lần/ngày",
              "contraindications": "nhiễm trùng da, mụn trứng cá",
              "age_restriction": "trên 2 tuổi",
-             "drug_type": "OTC"}
+             "drug_type": "OTC"},
+
+
+            {"drug_name":"Ibuprofen","active_ingredient":"Ibuprofen",
+             "symptoms":"đau đầu, sốt, viêm, đau cơ, đau khớp",
+             "medical_condition":"giảm đau, hạ sốt, chống viêm",
+             "dosage":"200mg-400mg mỗi 6-8 giờ",
+             "contraindications":"loét dạ dày, suy thận, dị ứng aspirin",
+             "age_restriction":"trên 6 tháng tuổi","drug_type":"OTC"
+            }
         ]
         
         os.makedirs(os.path.dirname(path), exist_ok=True)
