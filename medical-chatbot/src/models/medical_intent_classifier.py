@@ -72,13 +72,65 @@ class MedicalIntentClassifier:
         training_data = []
         
         try:
-            # Đọc dữ liệu từ file CSV với absolute path
-            csv_path = os.path.join(os.getcwd(), 'data', 'medical_dataset_training.csv')
-            try:
-                df = pd.read_csv(csv_path, encoding='utf-8')
-            except UnicodeDecodeError:
-                print("UTF-8 failed, trying latin-1...")
-                df = pd.read_csv(csv_path, encoding='latin-1')
+            # Đọc dữ liệu từ file CSV được chuẩn hóa
+            data_dir = os.path.join(os.getcwd(), 'data')
+            intent_csv_path = os.path.join(data_dir, 'medical_intent_training_dataset.csv')
+            
+            # Ưu tiên file CSV chuẩn hóa cho intent classification
+            if os.path.exists(intent_csv_path):
+                try:
+                    df = pd.read_csv(intent_csv_path, encoding='utf-8')
+                    print(f"Đã tải {len(df)} mẫu từ dataset intent chuẩn hóa")
+                    
+                    # Trực tiếp tạo training data từ CSV chuẩn hóa
+                    for _, row in df.iterrows():
+                        text = row.get('text', '')
+                        intent = row.get('intent', '')
+                        if text and intent:
+                            training_data.append((text, intent))
+                    
+                    print(f"Đã tạo {len(training_data)} mẫu training từ dataset chuẩn hóa")
+                    return training_data
+                    
+                except Exception as e:
+                    print(f"Lỗi khi đọc dataset chuẩn hóa: {e}")
+                    # Fallback to original logic
+            
+            # Fallback: đọc từ dataset y tế gốc nếu không có file chuẩn hóa
+            csv_path = os.path.join(data_dir, 'medical_dataset_training.csv')
+            json_path = os.path.join(data_dir, 'medical_dataset_training.json')
+
+            # Prefer JSON if available (avoids encoding/dtype issues)
+            if os.path.exists(json_path):
+                try:
+                    df = pd.read_json(json_path, encoding='utf-8')
+                except ValueError:
+                    # Last resort: read as lines or fallback to csv
+                    try:
+                        df = pd.read_json(json_path, lines=True, encoding='utf-8')
+                    except Exception:
+                        print("Không thể đọc JSON, sẽ thử CSV...")
+                        df = None
+            else:
+                df = None
+
+            # If no JSON or failed, read CSV but only necessary columns as strings
+            if df is None:
+                usecols = [
+                    'drug_name',
+                    'medical_condition_vi',
+                    'medical_condition',
+                    'side_effects_vi',
+                    'medical_condition_description_vi'
+                ]
+                try:
+                    df = pd.read_csv(csv_path, encoding='utf-8', usecols=usecols, dtype=str, low_memory=False)
+                except UnicodeDecodeError:
+                    print("UTF-8 failed, trying latin-1...")
+                    df = pd.read_csv(csv_path, encoding='latin-1', usecols=usecols, dtype=str, low_memory=False)
+                except FileNotFoundError:
+                    print("Không tìm thấy dataset gốc, sử dụng dữ liệu mặc định")
+                    return self._create_fallback_training_data()
             
             print(f"Đã tải {len(df)} bản ghi từ dataset y tế (CSV)")
             
