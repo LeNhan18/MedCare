@@ -115,11 +115,11 @@ def test_intent_classifier():
         
         # Kiểm tra emergency detection
         if classifier.detect_emergency(text):
-            print(f"    ⚠️  EMERGENCY DETECTED!")
+            print(f" EMERGENCY DETECTED!")
         
         print()
     
-    print("\n📈 Thống kê mô hình:")
+    print("\nThống kê mô hình:")
     print("-" * 30)
     
     # Hiển thị thông tin về training data
@@ -181,12 +181,12 @@ if __name__ == "__main__":
         classifier = test_intent_classifier()
         
         print("\n" + "=" * 60)
-        print("✅ Test hoàn thành thành công!")
+        print(" Test hoàn thành thành công!")
         print("\nIntent Classifier đã sẵn sàng sử dụng với dataset thực tế")
         print("Mô hình có thể nhận diện 8 loại intent khác nhau từ")
         print("2,913 thuốc trong dataset y tế.")
         
     except Exception as e:
-        print(f"\n❌ Lỗi trong quá trình test: {e}")
+        print(f"\n Lỗi trong quá trình test: {e}")
         import traceback
         traceback.print_exc()

@@ -74,13 +74,34 @@ class MedicalIntentClassifier:
         try:
             # Đọc dữ liệu từ file CSV được chuẩn hóa
             data_dir = os.path.join(os.getcwd(), 'data')
-            intent_csv_path = os.path.join(data_dir, 'medical_intent_training_dataset.csv')
             
-            # Ưu tiên file CSV chuẩn hóa cho intent classification
+            # Ưu tiên file 5K CSV trước
+            intent_5k_csv_path = os.path.join(data_dir, 'medical_intent_training_dataset_5k.csv')
+            if os.path.exists(intent_5k_csv_path):
+                try:
+                    df = pd.read_csv(intent_5k_csv_path, encoding='utf-8')
+                    print(f" Đã tải {len(df)} mẫu từ dataset 5K chuẩn hóa")
+                    
+                    # Trực tiếp tạo training data từ CSV 5K
+                    for _, row in df.iterrows():
+                        text = row.get('text', '').strip('"')  # Remove quotes
+                        intent = row.get('intent', '')
+                        if text and intent:
+                            training_data.append((text, intent))
+                    
+                    print(f" Đã tạo {len(training_data)} mẫu training từ dataset 5K")
+                    return training_data
+                    
+                except Exception as e:
+                    print(f"️ Lỗi khi đọc dataset 5K: {e}")
+                    print(" Fallback to original dataset...")
+            
+            # Fallback: dataset 394 mẫu
+            intent_csv_path = os.path.join(data_dir, 'medical_intent_training_dataset_5k.csv')
             if os.path.exists(intent_csv_path):
                 try:
                     df = pd.read_csv(intent_csv_path, encoding='utf-8')
-                    print(f"Đã tải {len(df)} mẫu từ dataset intent chuẩn hóa")
+                    print(f" Đã tải {len(df)} mẫu từ dataset intent chuẩn hóa")
                     
                     # Trực tiếp tạo training data từ CSV chuẩn hóa
                     for _, row in df.iterrows():

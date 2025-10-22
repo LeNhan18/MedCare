@@ -21,7 +21,6 @@ def analyze_translation_files():
         "data/drugs_data_translated_partial_side_effects.csv",
         "data/drugs_data_translated_partial_drug_classes.csv",
         "data/drugs_data_translated_partial_medical_condition_description.csv",
-        "data/drugs_data_simple_translated.csv"
     ]
     
     analysis_results = {}
