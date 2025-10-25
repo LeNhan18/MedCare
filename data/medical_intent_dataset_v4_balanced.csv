@@ -1,0 +1,1559 @@
+﻿text,intent,category,confidence
+Thuốc lisinopril có ảnh hưởng đến calcium?,drug_interaction,tương_tác_thuốc,1.0
+một thời gian ho,symptom_inquiry,triệu_chứng,0.8
+thời gian gần đây sốt,symptom_inquiry,triệu_chứng,0.8
+Tôi cần tư vấn,greeting,chào_hỏi,1.0
+Ai nên thực hiện MRI não?,medical_procedure,thủ_thuật_y_tế,1.0
+Hiệu quả của nội soi phế quản ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Xem đẹp 387,unknown,không_xác_định,1.0
+Em bé bị đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Phim ngon 857,unknown,không_xác_định,1.0
+Ăn tốt 625,unknown,không_xác_định,1.0
+aspirin có tác dụng phụ gì không,drug_question,thuốc,1.0
+"Đang dùng metformin, có được uống digoxin?",drug_interaction,tương_tác_thuốc,1.0
+Uống paracetamol bao nhiêu mg một ngày?,dosage_question,liều_lượng,1.0
+Khi nào cần chụp X-quang?,medical_procedure,thủ_thuật_y_tế,1.0
+Trẻ sơ sinh 3 ngày tuổi vàng da mức bilirubin 18mg/dL cần can thiệp gì?,emergency,emergency,1.0
+Thuốc omeprazole có tương tác với iron không?,drug_interaction,tương_tác_thuốc,1.0
+Phim tốt 967,unknown,không_xác_định,1.0
+Ăn hay 846,unknown,không_xác_định,1.0
+Hiệu quả của nội soi dạ dày ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Cách điều trị mệt mỏi,symptom_inquiry,triệu_chứng,0.7
+Help! co giật,emergency,cấp_cứu,1.0
+Chi phí siêu âm tim bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+abcdefg,unknown,không_xác_định,1.0
+Giảm căng thẳng,general_health,sức_khỏe_tổng_quát,1.0
+omeprazole là thuốc gì?,drug_question,thuốc,0.7
+Thuốc ibuprofen uống lúc nào,dosage_question,liều_lượng,1.0
+Phim hay gì,unknown,không_xác_định,1.0
+Cấp cứu! ngộ độc nghiêm trọng,emergency,cấp_cứu,1.0
+Báo động đỏ: sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Thuốc amoxicillin chữa bệnh gì,drug_question,thuốc,1.0
+Cách dùng cetirizine đúng cách,dosage_question,liều_lượng,0.7
+Isotretinoin có ảnh hưởng đến thai nhi như thế nào?,side_effects,side_effects,1.0
+Tình huống khẩn cấp: tim ngừng đập,emergency,cấp_cứu,1.0
+Từ sáng táo bón,symptom_inquiry,triệu_chứng,0.7
+Từ hôm qua đau bụng,symptom_inquiry,triệu_chứng,1.0
+Cấp cứu! khó thở nghiêm trọng,emergency,cấp_cứu,1.0
+Ai nên thực hiện chụp X-quang?,medical_procedure,thủ_thuật_y_tế,1.0
+Xem tốt 611,unknown,không_xác_định,1.0
+Thay thế cho nội soi phế quản có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Khoảng cách giữa các lần uống ibuprofen,dosage_question,liều_lượng,0.7
+Báo động đỏ: mất ý thức,emergency,cấp_cứu,1.0
+Uống ibuprofen có hại gì không?,side_effects,tác_dụng_phụ,0.7
+Đi tốt 552,unknown,không_xác_định,1.0
+Tình trạng nguy kịch: co giật,emergency,cấp_cứu,1.0
+Chị ấy bị kiệt sức,symptom_inquiry,triệu_chứng,0.8
+metformin có hiệu quả không?,drug_question,thuốc,0.7
+Triệu chứng ngứa là gì?,symptom_inquiry,triệu_chứng,0.7
+"Hello quý vị, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Đang bị nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Công thức nấu phở bò ngon như thế nào?,unknown,không_xác_định,1.0
+Sau khi uống ibuprofen bị buồn nôn,side_effects,tác_dụng_phụ,1.0
+Cách sống khỏe với thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc amoxicillin gây ra triệu chứng gì,side_effects,tác_dụng_phụ,1.0
+"Hi, rất vui được gặp chuyên gia",greeting,chào_hỏi,1.0
+Thuốc amoxicillin có ảnh hưởng đến calcium?,drug_interaction,tương_tác_thuốc,1.0
+Khi nào cần xét nghiệm máu?,medical_procedure,thủ_thuật_y_tế,1.0
+Thuốc metformin chữa bệnh gì?,drug_question,thuốc,0.7
+SOS! sốc phản vệ,emergency,cấp_cứu,1.0
+Kết hợp aspirin với digoxin có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+Sau khi uống amoxicillin bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Làm sao để chữa mệt mỏi?,symptom_inquiry,triệu_chứng,1.0
+Tác dụng phụ của metformin,side_effects,tác_dụng_phụ,0.7
+Tôi bị ngứa,symptom_inquiry,triệu_chứng,0.7
+Tôi nên phòng bệnh như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+"Xin chào cô, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Liều dùng của ibuprofen,dosage_question,liều_lượng,1.0
+Lối sống lành mạnh với cholesterol cao?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Sau khi uống aspirin bị ho,side_effects,tác_dụng_phụ,0.7
+Bí quyết để cải thiện tuần hoàn?,general_health,sức_khỏe_tổng_quát,1.0
+"Chúc, rất vui được gặp thầy thuốc",greeting,chào_hỏi,1.0
+Phim ngon 731,unknown,không_xác_định,1.0
+Công thức *chữa* cháy,unknown,không_xác_định,1.0
+Trẻ em uống ibuprofen thế nào?,dosage_question,liều_lượng,1.0
+"Kính chào, chúc ông/bà bình an",greeting,chào_hỏi,1.0
+Cách sống khỏe với tiểu đường?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Chào doctor, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Chào buổi sáng,greeting,chào_hỏi,1.0
+Nhạc vui 409,unknown,không_xác_định,1.0
+Phim đẹp 928,unknown,không_xác_định,1.0
+Có thể dùng losartan cùng với digoxin không?,drug_interaction,tương_tác_thuốc,1.0
+Sau khi uống ibuprofen bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Uống ibuprofen xong bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Thuốc aspirin uống mấy lần một ngày,dosage_question,liều_lượng,1.0
+Cách dùng amoxicillin đúng cách,dosage_question,liều_lượng,0.7
+Liều dùng ibuprofen cho người lớn,dosage_question,liều_lượng,0.7
+Uống acetaminophen xong bị mệt mỏi,side_effects,tác_dụng_phụ,0.8
+Liều khởi đầu của amoxicillin,dosage_question,liều_lượng,1.0
+Đi vui 660,unknown,không_xác_định,1.0
+"Chào buổi sáng, rất vui được gặp thầy",greeting,chào_hỏi,1.0
+Tác dụng thuốc metformin,drug_question,thuốc,0.7
+Mấy ngày nay sốt,symptom_inquiry,triệu_chứng,1.0
+Làm thế nào để giảm stress?,general_health,sức_khỏe_tổng_quát,1.0
+Xem đẹp 830,unknown,không_xác_định,1.0
+Ăn ngon 222,unknown,không_xác_định,1.0
+Vợ/chồng tôi đau đầu,symptom_inquiry,triệu_chứng,0.7
+Thuốc amoxicillin có ảnh hưởng đến warfarin?,drug_interaction,tương_tác_thuốc,1.0
+Giá thuốc paracetamol bao nhiêu,drug_question,thuốc,1.0
+Sau khi uống metformin bị đau đầu,side_effects,tác_dụng_phụ,0.7
+Cần cấp cứu ngay! Ông già bị ngạt khói trong đám cháy,emergency,emergency,1.0
+Thuốc acetylsalicylic acid làm tôi mệt mỏi,side_effects,tác_dụng_phụ,0.8
+Xuất hiện triệu chứng đau bụng,symptom_inquiry,triệu_chứng,1.0
+"Xin chào doctor, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Chống chỉ định của ibuprofen,side_effects,tác_dụng_phụ,0.7
+Hôm nay ho,symptom_inquiry,triệu_chứng,0.7
+Cách uống metformin,dosage_question,liều_lượng,0.7
+Thuốc amoxicillin làm tôi mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Nhạc ngon 769,unknown,không_xác_định,1.0
+Thuốc aspirin có hiệu quả không,drug_question,thuốc,1.0
+Phim hay 258,unknown,không_xác_định,1.0
+Thuốc ibuprofen có tương tác với vitamin C không?,drug_interaction,tương_tác_thuốc,1.0
+Ông cụ 82 tuổi ho đờm có máu và khó thở khi nằm ngửa,emergency,emergency,1.0
+Cách dùng metformin đúng cách,dosage_question,liều_lượng,0.7
+Tôi nên thải độc cơ thể như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Quy tắc tăng cường trí nhớ cơ bản?,general_health,sức_khỏe_tổng_quát,1.0
+Kinh nghiệm chăm sóc da hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+Cảm thấy sốt,symptom_inquiry,triệu_chứng,1.0
+Thuốc paracetamol gây ra triệu chứng gì,side_effects,tác_dụng_phụ,1.0
+Thời gian phẫu thuật mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc đẹp 978,unknown,không_xác_định,1.0
+Liều dùng omeprazole cho người lớn,dosage_question,liều_lượng,0.7
+Uống ibuprofen xong bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Cách sống khỏe mạnh,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc paracetamol có độc không?,side_effects,tác_dụng_phụ,0.7
+Cần cấp cứu ngay vì gãy xương hở,emergency,cấp_cứu,1.0
+Tôi nên tăng cường miễn dịch như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Ai nên thực hiện sinh thiết?,medical_procedure,thủ_thuật_y_tế,1.0
+Khẩn cấp: mất ý thức,emergency,cấp_cứu,1.0
+mới đây mệt mỏi,symptom_inquiry,triệu_chứng,0.8
+Uống paracetamol có bị buồn nôn không?,side_effects,tác_dụng_phụ,1.0
+Có triệu chứng kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Quy tắc bảo vệ mắt cơ bản?,general_health,sức_khỏe_tổng_quát,1.0
+"Chào, chúc doctor ngày mới tốt lành",greeting,chào_hỏi,1.0
+Làm sao để chữa đau đầu?,symptom_inquiry,triệu_chứng,1.0
+Cách dùng aspirin đúng cách,dosage_question,liều_lượng,0.7
+Hướng dẫn bảo vệ mắt chi tiết?,general_health,sức_khỏe_tổng_quát,1.0
+nhức đầu là bệnh gì?,symptom_inquiry,triệu_chứng,0.8
+Tương tác giữa paracetamol và insulin như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+Cách điều trị ho,symptom_inquiry,triệu_chứng,0.7
+Từ hôm qua kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Thuốc aspirin làm tôi buồn nôn,side_effects,tác_dụng_phụ,1.0
+Em bé bị kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Ăn vui 771,unknown,không_xác_định,1.0
+Bà ngoại bị ho,symptom_inquiry,triệu_chứng,1.0
+Bí quyết để giữ ấm mùa đông?,general_health,sức_khỏe_tổng_quát,1.0
+Tăng cường đề kháng,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc losartan có tương tác với calcium không?,drug_interaction,tương_tác_thuốc,1.0
+Cách sử dụng aspirin đúng,dosage_question,liều_lượng,1.0
+Tình huống khẩn cấp: chảy máu nhiều,emergency,cấp_cứu,1.0
+Ăn đẹp 515,unknown,không_xác_định,1.0
+Ăn đẹp 327,unknown,không_xác_định,1.0
+Xem tốt 724,unknown,không_xác_định,1.0
+Anh ấy bị đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+"Chào, chúc cô sức khỏe",greeting,chào_hỏi,1.0
+Có triệu chứng sốt nhẹ,symptom_inquiry,triệu_chứng,0.8
+"Xin chào, cảm ơn bác sĩ đã hỗ trợ",greeting,chào_hỏi,1.0
+Cách điều trị sốt,symptom_inquiry,triệu_chứng,0.7
+Nhạc đẹp 260,unknown,không_xác_định,1.0
+Cần làm gì để ăn uống lành mạnh?,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc acetaminophen có gây mệt mỏi không,side_effects,tác_dụng_phụ,0.8
+Thuốc aspirin uống bao nhiêu viên,dosage_question,liều_lượng,1.0
+Cách bảo vệ mắt hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Nhạc hay 582,unknown,không_xác_định,1.0
+Lịch uống thuốc ibuprofen,dosage_question,liều_lượng,0.7
+Ăn hay 411,unknown,không_xác_định,1.0
+Mấy ngày nay đau bụng,symptom_inquiry,triệu_chứng,1.0
+Kết hợp losartan với digoxin có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+Đang bị ho,symptom_inquiry,triệu_chứng,1.0
+Nhạc ngon 157,unknown,không_xác_định,1.0
+Thuốc paracetamol chữa bệnh gì,drug_question,thuốc,1.0
+Báo động đỏ: đau ngực dữ dội,emergency,cấp_cứu,1.0
+Thuốc acetylsalicylic acid uống mấy lần một ngày,dosage_question,liều_lượng,0.8
+Xem đẹp 623,unknown,không_xác_định,1.0
+Lối sống lành mạnh với trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Kết hợp metformin với digoxin có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+Cần cấp cứu ngay vì sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Cách tăng cường miễn dịch hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+mới đây đau đầu,symptom_inquiry,triệu_chứng,0.8
+Cho tôi hỏi về thuốc amoxicillin,drug_question,thuốc,1.0
+Khi nào cần điện tim?,medical_procedure,thủ_thuật_y_tế,1.0
+Phim đẹp 756,unknown,không_xác_định,1.0
+Đang bị đau bụng,symptom_inquiry,triệu_chứng,1.0
+Có thể dùng lisinopril cùng với calcium không?,drug_interaction,tương_tác_thuốc,1.0
+Phối hợp ibuprofen và insulin có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Phối hợp metformin và tramadol có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Cách sống khỏe với trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cách sử dụng amoxicillin đúng,dosage_question,liều_lượng,1.0
+Tình trạng nguy kịch: sốc phản vệ,emergency,cấp_cứu,1.0
+"Chào buổi sáng ông/bà, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Sau khi uống amoxicillin bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Kinh nghiệm tăng cường miễn dịch hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+gần đây đau bụng,symptom_inquiry,triệu_chứng,0.8
+Tác dụng phụ của ibuprofen,side_effects,tác_dụng_phụ,1.0
+Tôi thấy ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Mua thuốc acetylsalicylic acid ở đâu,drug_question,thuốc,0.8
+Tôi có triệu chứng đau họng,symptom_inquiry,triệu_chứng,0.7
+Làm sao để giữ dáng an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Báo động đỏ: gãy xương hở,emergency,cấp_cứu,1.0
+Công dụng của aspirin,drug_question,thuốc,0.7
+Phối hợp atorvastatin và tramadol có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Thời gian uống paracetamol,dosage_question,liều_lượng,0.7
+Mấy ngày nay ho có đờm,symptom_inquiry,triệu_chứng,0.8
+aaaaaa,unknown,không_xác_định,1.0
+Có dấu hiệu sốt,symptom_inquiry,triệu_chứng,1.0
+"Xin chào, chúc ông/bà bình an",greeting,chào_hỏi,1.0
+Xem hay 176,unknown,không_xác_định,1.0
+Tác hại của thuốc amoxicillin,side_effects,tác_dụng_phụ,1.0
+Sinh hoạt hàng ngày cho mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Sinh hoạt hàng ngày cho gan nhiễm mỡ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc acetaminophen uống lúc nào,dosage_question,liều_lượng,0.8
+Thuốc ibuprofen có làm giảm tác dụng của warfarin?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc ibuprofen có gây mệt mỏi không,side_effects,tác_dụng_phụ,1.0
+Có nên ngừng uống acetylsalicylic acid không vì bị mệt mỏi,side_effects,tác_dụng_phụ,0.8
+Ăn tốt 482,unknown,không_xác_định,1.0
+ibuprofen uống như thế nào?,drug_question,thuốc,1.0
+Uống acetylsalicylic acid bao nhiêu mg một ngày?,dosage_question,liều_lượng,0.8
+Tôi nên bảo vệ mắt như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Xem tốt 669,unknown,không_xác_định,1.0
+Phản ứng phụ của aspirin,side_effects,tác_dụng_phụ,0.7
+Tương tác giữa losartan và insulin như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+Xem vui 891,unknown,không_xác_định,1.0
+"Xin kính chào, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+Thuốc acetylsalicylic acid chữa bệnh gì,drug_question,thuốc,0.8
+Sinh hoạt hàng ngày cho tiểu đường?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Anh ấy bị ho,symptom_inquiry,triệu_chứng,1.0
+Thuốc ibuprofen làm tôi chóng mặt,side_effects,tác_dụng_phụ,1.0
+Thuốc paracetamol có an toàn không,drug_question,thuốc,1.0
+Phối hợp amoxicillin và gabapentin có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Sau đo mật độ xương cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+"Xin kính chào, chúc chuyên gia sức khỏe",greeting,chào_hỏi,1.0
+"Chào bác sĩ, rất vui được gặp thầy",greeting,chào_hỏi,1.0
+Tuần này sốt,symptom_inquiry,triệu_chứng,1.0
+Uống amoxicillin có ảnh hưởng gì,side_effects,tác_dụng_phụ,1.0
+Uống aspirin có ảnh hưởng gì,side_effects,tác_dụng_phụ,1.0
+không liên quan,unknown,không_xác_định,1.0
+Anh ấy bị sốt,symptom_inquiry,triệu_chứng,1.0
+Thời gian xét nghiệm máu mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Help! sốc phản vệ,emergency,cấp_cứu,1.0
+Sinh hoạt hàng ngày cho gout?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+ibuprofen có tác dụng phụ gì không,drug_question,thuốc,1.0
+Bảo vệ sức khỏe,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc ibuprofen có an toàn không,drug_question,thuốc,1.0
+Nhạc ngon 299,unknown,không_xác_định,1.0
+Phẫu thuật thay khớp háng có nguy hiểm không?,medical_procedure,medical_procedure,1.0
+Xem ngon 846,unknown,không_xác_định,1.0
+Hi bác sĩ,greeting,chào_hỏi,1.0
+Từ sáng ngứa,symptom_inquiry,triệu_chứng,0.7
+Phương pháp bảo vệ mắt tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Mua thuốc ibuprofen ở đâu,drug_question,thuốc,1.0
+Cảm thấy đau bụng,symptom_inquiry,triệu_chứng,1.0
+Xem vui 872,unknown,không_xác_định,1.0
+Nhạc vui 559,unknown,không_xác_định,1.0
+Uống paracetamol xong bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Khẩn cấp: sốc phản vệ,emergency,cấp_cứu,1.0
+Hướng dẫn cải thiện tuần hoàn chi tiết?,general_health,sức_khỏe_tổng_quát,1.0
+Chuẩn bị gì trước khi test dị ứng?,medical_procedure,thủ_thuật_y_tế,1.0
+"Chào buổi sáng, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Bà ngoại bị sốt,symptom_inquiry,triệu_chứng,1.0
+Tác dụng phụ của cetirizine,side_effects,tác_dụng_phụ,0.7
+Hướng dẫn phòng bệnh chi tiết?,general_health,sức_khỏe_tổng_quát,1.0
+Cho tôi hỏi về thuốc aspirin,drug_question,thuốc,1.0
+"Chúc chuyên gia, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Thuốc acetaminophen có tác dụng gì,drug_question,thuốc,0.8
+Help! khó thở nghiêm trọng,emergency,cấp_cứu,1.0
+Cách dùng thuốc Brufen,dosage_question,liều_lượng,0.8
+Uống amoxicillin có hại gì không?,side_effects,tác_dụng_phụ,0.7
+Chống chỉ định của amoxicillin,side_effects,tác_dụng_phụ,0.7
+Hi quý vị ơi,greeting,chào_hỏi,1.0
+Ông ấy bị mệt lả,symptom_inquiry,triệu_chứng,0.8
+Từ hôm qua đau đầu,symptom_inquiry,triệu_chứng,1.0
+Bạn có thể giúp tôi không?,greeting,chào_hỏi,1.0
+Em bé bị mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Ai nên thực hiện xét nghiệm nước tiểu?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc hay 145,unknown,không_xác_định,1.0
+Thuốc amoxicillin có gây đau đầu không,side_effects,tác_dụng_phụ,1.0
+Có thể dùng ibuprofen cùng với warfarin không?,drug_interaction,tương_tác_thuốc,1.0
+thời gian gần đây đau bụng,symptom_inquiry,triệu_chứng,0.8
+Cần bác sĩ gấp: co giật,emergency,cấp_cứu,1.0
+Phương pháp giảm stress tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc omeprazole có ảnh hưởng đến warfarin?,drug_interaction,tương_tác_thuốc,1.0
+Ăn tốt 311,unknown,không_xác_định,1.0
+Cảm thấy đau đầu,symptom_inquiry,triệu_chứng,1.0
+Liều tối đa của acetaminophen,dosage_question,liều_lượng,0.8
+Bị ho có đờm phải làm sao?,symptom_inquiry,triệu_chứng,0.8
+Phim đẹp 117,unknown,không_xác_định,1.0
+Thành phần của cetirizine,drug_question,thuốc,0.7
+Thuốc acetylsalicylic acid có gây mệt mỏi không,side_effects,tác_dụng_phụ,0.8
+Tương tác giữa aspirin và digoxin như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+"Tôi đang uống amoxicillin, có thể uống thêm warfarin?",drug_interaction,tương_tác_thuốc,1.0
+Chế độ ăn cho người dạ dày?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Tình trạng nguy kịch: sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Phim đẹp 505,unknown,không_xác_định,1.0
+Sau khi uống metformin bị mệt mỏi,side_effects,tác_dụng_phụ,0.7
+Uống acetaminophen có bị chóng mặt không?,side_effects,tác_dụng_phụ,0.8
+Con tôi có ho,symptom_inquiry,triệu_chứng,0.7
+Có nên ngừng uống aspirin không vì bị buồn nôn,side_effects,tác_dụng_phụ,1.0
+Hi thầy ơi,greeting,chào_hỏi,1.0
+Thuốc paracetamol uống mấy lần một ngày,dosage_question,liều_lượng,1.0
+Tác hại của thuốc metformin,side_effects,tác_dụng_phụ,0.7
+Tôi bị sốt cao,symptom_inquiry,triệu_chứng,0.8
+Thuốc metformin có làm giảm tác dụng của iron?,drug_interaction,tương_tác_thuốc,1.0
+"Đang dùng metformin, có được uống insulin?",drug_interaction,tương_tác_thuốc,1.0
+Sau xét nghiệm máu cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Lưu ý khi dùng amoxicillin,side_effects,tác_dụng_phụ,0.7
+Kinh nghiệm tăng cường trí nhớ hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc ibuprofen uống trước hay sau ăn,dosage_question,liều_lượng,1.0
+Tôi thấy đau đầu,symptom_inquiry,triệu_chứng,1.0
+Hiệu quả của xét nghiệm máu ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Sau MRI não cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Cách giữ gìn sức khỏe,general_health,sức_khỏe_tổng_quát,1.0
+Sau test dị ứng cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Thông tin về ibuprofen,drug_question,thuốc,1.0
+"Chào anh/chị, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Cho tôi hỏi về thuốc acetaminophen,drug_question,thuốc,0.8
+Chào ông/bà!,greeting,chào_hỏi,1.0
+Ăn ngon 713,unknown,không_xác_định,1.0
+Lối sống lành mạnh với hen suyễn?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc acetaminophen có độc hại không,side_effects,tác_dụng_phụ,0.8
+Giá thuốc acetaminophen bao nhiêu,drug_question,thuốc,0.8
+Thuốc paracetamol làm tôi chóng mặt,side_effects,tác_dụng_phụ,1.0
+Thông tin về paracetamol,drug_question,thuốc,1.0
+"Hello, xin chào!",greeting,chào_hỏi,1.0
+Thói quen tốt cho mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Một ngày uống aspirin mấy lần?,dosage_question,liều_lượng,0.7
+Uống aspirin xong bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Bí quyết sống khỏe mạnh với béo phì?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Uống acetaminophen có ảnh hưởng gì,side_effects,tác_dụng_phụ,0.8
+Làm sao để chữa ho khan?,symptom_inquiry,triệu_chứng,0.8
+"Đang dùng atorvastatin, có được uống vitamin C?",drug_interaction,tương_tác_thuốc,1.0
+Liều lượng thuốc acetaminophen,drug_question,thuốc,0.8
+Cách sống khỏe với đau khớp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Kinh nghiệm giữ ấm mùa đông hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+"Hi anh/chị, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Cần cấp cứu ngay vì tim ngừng đập,emergency,cấp_cứu,1.0
+Thuốc aspirin có làm giảm tác dụng của digoxin?,drug_interaction,tương_tác_thuốc,1.0
+Hiệu quả của xét nghiệm nước tiểu ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Có thể dùng aspirin cùng với gabapentin không?,drug_interaction,tương_tác_thuốc,1.0
+Có triệu chứng đau bụng,symptom_inquiry,triệu_chứng,1.0
+Thuốc amlodipine có tương tác với digoxin không?,drug_interaction,tương_tác_thuốc,1.0
+Cấp cứu! co giật,emergency,cấp_cứu,1.0
+"Chào cô, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Chống chỉ định của cetirizine,side_effects,tác_dụng_phụ,0.7
+Phim tốt 564,unknown,không_xác_định,1.0
+Nhạc tốt 293,unknown,không_xác_định,1.0
+Thuốc paracetamol có gây chóng mặt không,side_effects,tác_dụng_phụ,1.0
+Liều tối đa của acetylsalicylic acid,dosage_question,liều_lượng,0.8
+Thuốc ibuprofen có ảnh hưởng đến vitamin C?,drug_interaction,tương_tác_thuốc,1.0
+Cấp cứu! sốc phản vệ,emergency,cấp_cứu,1.0
+Đi ngon 193,unknown,không_xác_định,1.0
+Thời gian đo mật độ xương mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Thực phẩm nên tránh khi thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Tình huống khẩn cấp: đột quỵ,emergency,cấp_cứu,1.0
+Cách giảm stress hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Báo động đỏ: chảy máu nhiều,emergency,cấp_cứu,1.0
+Phim ngon 843,unknown,không_xác_định,1.0
+Phim tốt 484,unknown,không_xác_định,1.0
+Thành phần của metformin,drug_question,thuốc,0.7
+tháng này mệt mỏi,symptom_inquiry,triệu_chứng,0.8
+Tập thể dục như thế nào khi cholesterol cao?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cần bác sĩ gấp: ngộ độc nghiêm trọng,emergency,cấp_cứu,1.0
+"Đang dùng losartan, có được uống insulin?",drug_interaction,tương_tác_thuốc,1.0
+Khám sức khỏe định kỳ,general_health,sức_khỏe_tổng_quát,1.0
+Mua thuốc paracetamol ở đâu,drug_question,thuốc,1.0
+Từ hôm qua ho,symptom_inquiry,triệu_chứng,1.0
+Cần làm gì để giữ sức khỏe?,general_health,sức_khỏe_tổng_quát,1.0
+Quy tắc ăn uống lành mạnh cơ bản?,general_health,sức_khỏe_tổng_quát,1.0
+một thời gian đau đầu,symptom_inquiry,triệu_chứng,0.8
+Chế độ ăn cho người trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Chế độ ăn cho người đau khớp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thành phần của paracetamol,drug_question,thuốc,0.7
+Làm sao để bảo vệ mắt an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Cần cấp cứu ngay vì đau ngực dữ dội,emergency,cấp_cứu,1.0
+Nhạc vui 195,unknown,không_xác_định,1.0
+Rủi ro của MRI não là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+SOS! gãy xương hở,emergency,cấp_cứu,1.0
+Cấp cứu! mất ý thức,emergency,cấp_cứu,1.0
+Nhịn ăn gián đoạn ảnh hưởng gì?,diet_lifestyle,diet_lifestyle,1.0
+Chi phí chụp X-quang bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+Xem vui 453,unknown,không_xác_định,1.0
+Thuốc omeprazole có tác dụng phụ gì?,side_effects,tác_dụng_phụ,0.7
+"Xin chào, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Tình huống khẩn cấp: mất ý thức,emergency,cấp_cứu,1.0
+Liệu omeprazole và warfarin có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Tương tác giữa metformin và gabapentin như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+123456,unknown,không_xác_định,1.0
+Công dụng của cetirizine,drug_question,thuốc,0.7
+Thuốc metformin uống trước hay sau ăn?,dosage_question,liều_lượng,0.7
+"Chào, rất vui được gặp ông/bà",greeting,chào_hỏi,1.0
+Gần đây chán ăn,symptom_inquiry,triệu_chứng,0.7
+Lưu ý khi dùng metformin,side_effects,tác_dụng_phụ,0.7
+"Tôi đang uống aspirin, có thể uống thêm prednisolone?",drug_interaction,tương_tác_thuốc,1.0
+Ăn vui 852,unknown,không_xác_định,1.0
+"Hello, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+Xem ngon 280,unknown,không_xác_định,1.0
+Phương pháp cải thiện tuần hoàn tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Vợ/chồng tôi đau bụng,symptom_inquiry,triệu_chứng,0.7
+Cách sử dụng thuốc ibuprofen,drug_question,thuốc,1.0
+Uống metformin có hại gì không?,side_effects,tác_dụng_phụ,0.7
+"Chào buổi chiều, chúc thầy sức khỏe",greeting,chào_hỏi,1.0
+Help! ngộ độc nghiêm trọng,emergency,cấp_cứu,1.0
+acetaminophen uống như thế nào?,drug_question,thuốc,0.8
+Khẩn cấp: đột quỵ,emergency,cấp_cứu,1.0
+"Chào buổi sáng, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+Mẹ tôi bị đau tụy,symptom_inquiry,triệu_chứng,0.8
+"Chào, cảm ơn anh/chị đã hỗ trợ",greeting,chào_hỏi,1.0
+Thuốc acetylsalicylic acid có độc hại không,side_effects,tác_dụng_phụ,0.8
+Đi tốt 861,unknown,không_xác_định,1.0
+Anh ấy bị ho khan,symptom_inquiry,triệu_chứng,0.8
+Sau chụp X-quang cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc hay 865,unknown,không_xác_định,1.0
+Phản ứng phụ của amoxicillin,side_effects,tác_dụng_phụ,0.7
+Thuốc paracetamol có làm giảm tác dụng của prednisolone?,drug_interaction,tương_tác_thuốc,1.0
+Uống ibuprofen xong bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Uống amoxicillin bao nhiêu mg một ngày?,dosage_question,liều_lượng,1.0
+Thuốc gì chữa sốt?,symptom_inquiry,triệu_chứng,0.7
+Ăn tốt 855,unknown,không_xác_định,1.0
+Thuốc omeprazole chữa bệnh gì?,drug_question,thuốc,0.7
+Bà ngoại bị đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Uống aspirin có bị mệt mỏi không?,side_effects,tác_dụng_phụ,1.0
+Thông tin về acetaminophen,drug_question,thuốc,0.8
+"Chúc, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+Uống ibuprofen có bị buồn nôn không?,side_effects,tác_dụng_phụ,1.0
+Phương pháp giữ sức khỏe tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Kết hợp omeprazole với vitamin C có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+"Kính chào, chúc thầy thuốc một ngày tuyệt vời",greeting,chào_hỏi,1.0
+"Xin chào chuyên gia, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+"Đang dùng losartan, có được uống calcium?",drug_interaction,tương_tác_thuốc,1.0
+Liệu metformin và insulin có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Chi phí sinh thiết bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+Chế độ dinh dưỡng cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ăn vui 667,unknown,không_xác_định,1.0
+Ăn gì ngon,unknown,không_xác_định,1.0
+Liệu atorvastatin và iron có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Cách uống amoxicillin,dosage_question,liều_lượng,0.7
+Help! mất ý thức,emergency,cấp_cứu,1.0
+Cảm thấy đau tụy,symptom_inquiry,triệu_chứng,0.8
+Em bé bị nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Bị ho phải làm sao?,symptom_inquiry,triệu_chứng,1.0
+"Chúc, cảm ơn bạn đã hỗ trợ",greeting,chào_hỏi,1.0
+"Kính chào chuyên gia, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Xem hay 268,unknown,không_xác_định,1.0
+Kinh nghiệm cải thiện tuần hoàn hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+Ai nên thực hiện xét nghiệm máu?,medical_procedure,thủ_thuật_y_tế,1.0
+Thời gian test dị ứng mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Có dấu hiệu nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Có thể dùng lisinopril cùng với digoxin không?,drug_interaction,tương_tác_thuốc,1.0
+Có thể dùng atorvastatin cùng với morphine không?,drug_interaction,tương_tác_thuốc,1.0
+Con tôi bị đau nửa đầu,symptom_inquiry,triệu_chứng,0.8
+Cách sử dụng thuốc amoxicillin,drug_question,thuốc,1.0
+Thuốc aspirin dùng để làm gì,drug_question,thuốc,1.0
+Lời khuyên sức khỏe,general_health,sức_khỏe_tổng_quát,1.0
+Cách sống khỏe với dạ dày?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ông ấy bị sốt,symptom_inquiry,triệu_chứng,1.0
+Cần làm gì để tập thể dục?,general_health,sức_khỏe_tổng_quát,1.0
+Thực phẩm nên tránh khi gout?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Chào buổi sáng, cảm ơn bác sĩ đã hỗ trợ",greeting,chào_hỏi,1.0
+Có dấu hiệu đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Chi phí đo mật độ xương bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+"Đang dùng losartan, có được uống tramadol?",drug_interaction,tương_tác_thuốc,1.0
+Đi hay 177,unknown,không_xác_định,1.0
+Thuốc metformin có tác dụng phụ gì?,side_effects,tác_dụng_phụ,0.7
+Tôi thấy mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Thuốc atorvastatin có làm giảm tác dụng của gabapentin?,drug_interaction,tương_tác_thuốc,1.0
+Đi đẹp 828,unknown,không_xác_định,1.0
+Có dấu hiệu đau bụng,symptom_inquiry,triệu_chứng,1.0
+SOS! đau ngực dữ dội,emergency,cấp_cứu,1.0
+Cách uống cetirizine,dosage_question,liều_lượng,0.7
+Uống aspirin có hại gì không?,side_effects,tác_dụng_phụ,0.7
+Ngủ nghỉ đủ giấc,general_health,sức_khỏe_tổng_quát,1.0
+Cảm thấy nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Một ngày uống ibuprofen mấy lần?,dosage_question,liều_lượng,0.7
+Xem đẹp 401,unknown,không_xác_định,1.0
+Phim ngon 556,unknown,không_xác_định,1.0
+Lối sống lành mạnh,general_health,sức_khỏe_tổng_quát,1.0
+Có triệu chứng đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+"Chào, chúc bác sĩ sức khỏe",greeting,chào_hỏi,1.0
+Thuốc ibuprofen có hiệu quả không,drug_question,thuốc,1.0
+Đi đẹp 135,unknown,không_xác_định,1.0
+Chuẩn bị gì trước khi MRI não?,medical_procedure,thủ_thuật_y_tế,1.0
+Có triệu chứng ho,symptom_inquiry,triệu_chứng,1.0
+Tập thể dục như thế nào khi gan nhiễm mỡ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cách uống ibuprofen,dosage_question,liều_lượng,0.7
+Liều lượng thuốc amoxicillin,dosage_question,liều_lượng,1.0
+văn bản vô nghĩa,unknown,không_xác_định,1.0
+metformin có an toàn không?,side_effects,tác_dụng_phụ,0.7
+Tình trạng nguy kịch: chảy máu nhiều,emergency,cấp_cứu,1.0
+Thực phẩm nên tránh khi gan nhiễm mỡ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Bí quyết sống khỏe mạnh với lo âu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Đang bị sốt cao,symptom_inquiry,triệu_chứng,0.8
+Thuốc paracetamol làm tôi buồn nôn,side_effects,tác_dụng_phụ,1.0
+Triệu chứng táo bón là gì?,symptom_inquiry,triệu_chứng,0.7
+Ai nên thực hiện phẫu thuật?,medical_procedure,thủ_thuật_y_tế,1.0
+"Xin chào ông/bà, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Liều tối đa của aspirin,dosage_question,liều_lượng,1.0
+Xem hay 366,unknown,không_xác_định,1.0
+Tình huống khẩn cấp: khó thở nghiêm trọng,emergency,cấp_cứu,1.0
+Mấy ngày nay ngứa,symptom_inquiry,triệu_chứng,0.7
+acetylsalicylic acid là thuốc gì,drug_question,thuốc,0.8
+Cách uống aspirin,dosage_question,liều_lượng,0.7
+"Đang dùng amoxicillin, có được uống iron?",drug_interaction,tương_tác_thuốc,1.0
+Có dấu hiệu kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Xem đẹp 181,unknown,không_xác_định,1.0
+Thay thế cho xét nghiệm nước tiểu có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Khẩn cấp: co giật,emergency,cấp_cứu,1.0
+Uống amoxicillin xong bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Probiotics nào tốt nhất cho hội chứng ruột kích thích?,diet_lifestyle,diet_lifestyle,1.0
+Bà ngoại bị nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Vợ/chồng tôi ngứa,symptom_inquiry,triệu_chứng,0.7
+Thuốc losartan có ảnh hưởng đến morphine?,drug_interaction,tương_tác_thuốc,1.0
+Phim vui 727,unknown,không_xác_định,1.0
+Tập thể dục như thế nào khi mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+acetaminophen là thuốc gì,drug_question,thuốc,0.8
+Em bé bị ho khan,symptom_inquiry,triệu_chứng,0.8
+Hello chuyên gia ơi,greeting,chào_hỏi,1.0
+Làm sao để chữa đau dạ dày?,symptom_inquiry,triệu_chứng,0.8
+Kinh nghiệm ăn uống lành mạnh hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+"Chào bác sĩ, chúc quý vị may mắn",greeting,chào_hỏi,1.0
+Phim đẹp 257,unknown,không_xác_định,1.0
+Phối hợp aspirin và tramadol có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc losartan có làm giảm tác dụng của warfarin?,drug_interaction,tương_tác_thuốc,1.0
+Điều chỉnh lối sống khi lo âu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Lưu ý khi dùng paracetamol,side_effects,tác_dụng_phụ,0.7
+Phương pháp phòng bệnh tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc paracetamol có hại gì không,side_effects,tác_dụng_phụ,1.0
+Hello,greeting,chào_hỏi,1.0
+Thực phẩm nên tránh khi cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc losartan có ảnh hưởng đến gabapentin?,drug_interaction,tương_tác_thuốc,1.0
+Trẻ em uống aspirin thế nào?,dosage_question,liều_lượng,1.0
+Đang bị mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Intermittent fasting có lợi ích gì cho người tiểu đường type 2?,diet_lifestyle,diet_lifestyle,1.0
+Uống ibuprofen có bị đau đầu không?,side_effects,tác_dụng_phụ,1.0
+Em bé bị ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Rủi ro của đo huyết áp là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc tốt 748,unknown,không_xác_định,1.0
+một thời gian sốt,symptom_inquiry,triệu_chứng,0.8
+Cách *điều trị* bệnh lười biếng,unknown,không_xác_định,1.0
+Cách uống omeprazole,dosage_question,liều_lượng,0.7
+Liều tối đa của ibuprofen,dosage_question,liều_lượng,1.0
+Thuốc metformin có độc không?,side_effects,tác_dụng_phụ,0.7
+Hướng dẫn giảm stress chi tiết?,general_health,sức_khỏe_tổng_quát,1.0
+Ăn ngon 208,unknown,không_xác_định,1.0
+Thuốc amoxicillin có tương tác với calcium không?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc gì chữa ngứa?,symptom_inquiry,triệu_chứng,0.7
+Ăn hay 698,unknown,không_xác_định,1.0
+SOS! tim ngừng đập,emergency,cấp_cứu,1.0
+Tác hại của thuốc omeprazole,side_effects,tác_dụng_phụ,0.7
+Gần đây táo bón,symptom_inquiry,triệu_chứng,0.7
+đau đầu là bệnh gì?,symptom_inquiry,triệu_chứng,1.0
+"Tôi đang uống paracetamol, có thể uống thêm digoxin?",drug_interaction,tương_tác_thuốc,1.0
+Cách sử dụng thuốc acetylsalicylic acid,drug_question,thuốc,0.8
+Thói quen tốt cho cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Tôi thấy đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Cách ngủ ngon hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Xuất hiện triệu chứng kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Tuần này ho khan,symptom_inquiry,triệu_chứng,0.8
+Một ngày uống amoxicillin mấy lần?,dosage_question,liều_lượng,0.7
+Nhạc hay 841,unknown,không_xác_định,1.0
+Thuốc amoxicillin có ảnh hưởng đến gabapentin?,drug_interaction,tương_tác_thuốc,1.0
+Tương tác giữa paracetamol và prednisolone như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+Liệu lisinopril và warfarin có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Sau khi uống ibuprofen bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+"Hello quý vị, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Thời gian uống ibuprofen,dosage_question,liều_lượng,0.7
+Ăn ngon 444,unknown,không_xác_định,1.0
+Cảm thấy mệt lả,symptom_inquiry,triệu_chứng,0.8
+Kết hợp paracetamol với insulin có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+Ai nên thực hiện siêu âm tim?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc tốt 881,unknown,không_xác_định,1.0
+Xem đẹp 482,unknown,không_xác_định,1.0
+Công dụng của metformin,drug_question,thuốc,0.7
+Liều dùng của amoxicillin,dosage_question,liều_lượng,1.0
+Uống acetylsalicylic acid có ảnh hưởng gì,side_effects,tác_dụng_phụ,0.8
+Chào buổi sáng doctor!,greeting,chào_hỏi,1.0
+cetirizine có an toàn không?,side_effects,tác_dụng_phụ,0.7
+chồng tôi bị đau đầu,symptom_inquiry,triệu_chứng,0.7
+Thói quen tốt cho lo âu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Làm thế nào để ngủ ngon?,general_health,sức_khỏe_tổng_quát,1.0
+"Tôi đang uống amlodipine, có thể uống thêm calcium?",drug_interaction,tương_tác_thuốc,1.0
+Nhạc hay 696,unknown,không_xác_định,1.0
+Thói quen tốt cho tiểu đường?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+!@#$%,unknown,không_xác_định,1.0
+Cấp cứu! đột quỵ,emergency,cấp_cứu,1.0
+Cảm thấy mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Làm sao để tăng cường miễn dịch an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Chế độ ăn cho người tiểu đường?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Hello, chúc thầy may mắn",greeting,chào_hỏi,1.0
+Rủi ro của chụp X-quang là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Cách sống khỏe với gout?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc cetirizine có tác dụng gì?,drug_question,thuốc,0.7
+Bà ngoại bị ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Uống ibuprofen xong bị buồn nôn,side_effects,tác_dụng_phụ,1.0
+Gần đây ngứa,symptom_inquiry,triệu_chứng,0.7
+Thuốc omeprazole có tương tác với tramadol không?,drug_interaction,tương_tác_thuốc,1.0
+Tập thể dục như thế nào khi dạ dày?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Phương pháp chăm sóc da tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Lối sống lành mạnh với đau khớp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc lisinopril có ảnh hưởng đến digoxin?,drug_interaction,tương_tác_thuốc,1.0
+Từ sáng ho,symptom_inquiry,triệu_chứng,0.7
+Lưu ý khi dùng aspirin,side_effects,tác_dụng_phụ,0.7
+"Chúc thầy, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Thuốc aspirin có làm giảm tác dụng của insulin?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc acetaminophen dùng để làm gì,drug_question,thuốc,0.8
+Cảm thấy đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Từ sáng đau đầu,symptom_inquiry,triệu_chứng,0.7
+Cách dùng thuốc Amoxil,dosage_question,liều_lượng,0.8
+Tập thể dục như thế nào khi cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Nhạc hay 943,unknown,không_xác_định,1.0
+Cách điều trị đau đầu,symptom_inquiry,triệu_chứng,0.7
+Cho tôi hỏi về thuốc paracetamol,drug_question,thuốc,1.0
+Phim đẹp 395,unknown,không_xác_định,1.0
+Uống aspirin xong bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Thuốc paracetamol có ảnh hưởng đến iron?,drug_interaction,tương_tác_thuốc,1.0
+"Chào bác sĩ ông/bà, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Cần cấp cứu ngay vì co giật,emergency,cấp_cứu,1.0
+Anh ấy bị ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Liệu amoxicillin và gabapentin có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc amoxicillin làm tôi đau đầu,side_effects,tác_dụng_phụ,1.0
+Phim đẹp 933,unknown,không_xác_định,1.0
+Làm sao để ăn uống lành mạnh an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Chế độ ăn uống lành mạnh,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc amoxicillin có hiệu quả không,drug_question,thuốc,1.0
+Xin chào bác sĩ ơi,greeting,chào_hỏi,1.0
+Chế độ dinh dưỡng béo phì?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Mua thuốc acetaminophen ở đâu,drug_question,thuốc,0.8
+Thực phẩm nên tránh khi lo âu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Điều chỉnh lối sống khi trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Chào buổi sáng, cảm ơn cô đã hỗ trợ",greeting,chào_hỏi,1.0
+Thuốc gì chữa táo bón?,symptom_inquiry,triệu_chứng,0.7
+Cách điều trị đau bụng,symptom_inquiry,triệu_chứng,0.7
+Tuần này chán ăn,symptom_inquiry,triệu_chứng,0.7
+Dinh dưỡng hợp lý,general_health,sức_khỏe_tổng_quát,1.0
+Tình trạng nguy kịch: ngộ độc nghiêm trọng,emergency,cấp_cứu,1.0
+Thuốc paracetamol uống lúc nào,dosage_question,liều_lượng,1.0
+Vợ/chồng tôi tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Cần bác sĩ gấp: khó thở nghiêm trọng,emergency,cấp_cứu,1.0
+Sau khi uống aspirin bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Thành phần của ibuprofen,drug_question,thuốc,0.7
+Tình trạng nguy kịch: đau ngực dữ dội,emergency,cấp_cứu,1.0
+Thuốc ibuprofen có gây đau đầu không,side_effects,tác_dụng_phụ,1.0
+Chuẩn bị gì trước khi chụp CT?,medical_procedure,thủ_thuật_y_tế,1.0
+Cấp cứu! chảy máu nhiều,emergency,cấp_cứu,1.0
+Phản ứng phụ của paracetamol,side_effects,tác_dụng_phụ,0.7
+Làm sao để chữa táo bón?,symptom_inquiry,triệu_chứng,0.7
+Công dụng của ibuprofen,drug_question,thuốc,0.7
+"Xin chào, chúc bạn ngày mới tốt lành",greeting,chào_hỏi,1.0
+Quy trình phẫu thuật như thế nào?,medical_procedure,thủ_thuật_y_tế,1.0
+Thời gian uống cetirizine,dosage_question,liều_lượng,0.7
+Phản ứng phụ của cetirizine,side_effects,tác_dụng_phụ,0.7
+Tôi nên giảm stress như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Có thể uống cùng lúc lansoprazole và clopidogrel không?,drug_interaction,drug_interaction,1.0
+Thói quen tốt cho hen suyễn?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Từ hôm qua ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Thay thế cho đo huyết áp có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Tôi nên tăng cường trí nhớ như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Thói quen tốt cho dạ dày?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Xuất hiện triệu chứng mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+một thời gian mệt mỏi,symptom_inquiry,triệu_chứng,0.8
+Chào bác sĩ,greeting,chào_hỏi,1.0
+Phim ngon 861,unknown,không_xác_định,1.0
+Xem tốt 437,unknown,không_xác_định,1.0
+Cách dùng ibuprofen đúng cách,dosage_question,liều_lượng,0.7
+Chào anh/chị ơi,greeting,chào_hỏi,1.0
+Chống chỉ định của omeprazole,side_effects,tác_dụng_phụ,0.7
+Con tôi bị ho,symptom_inquiry,triệu_chứng,1.0
+Thuốc ibuprofen có độc hại không,side_effects,tác_dụng_phụ,1.0
+Bị sốt nhẹ phải làm sao?,symptom_inquiry,triệu_chứng,0.8
+Cần làm gì để cải thiện tuần hoàn?,general_health,sức_khỏe_tổng_quát,1.0
+Phim ngon 729,unknown,không_xác_định,1.0
+Kết hợp paracetamol với tramadol có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+cetirizine có hiệu quả không?,drug_question,thuốc,0.7
+Mấy ngày nay chán ăn,symptom_inquiry,triệu_chứng,0.7
+Hôm nay táo bón,symptom_inquiry,triệu_chứng,0.7
+Phim vui 175,unknown,không_xác_định,1.0
+Tôi thấy sốt,symptom_inquiry,triệu_chứng,1.0
+Bí quyết để bảo vệ mắt?,general_health,sức_khỏe_tổng_quát,1.0
+Nhạc ngon 966,unknown,không_xác_định,1.0
+Một ngày uống metformin mấy lần?,dosage_question,liều_lượng,0.7
+SOS! đột quỵ,emergency,cấp_cứu,1.0
+Ăn đẹp 822,unknown,không_xác_định,1.0
+Thuốc paracetamol làm tôi đau đầu,side_effects,tác_dụng_phụ,1.0
+"Chào bác sĩ, chúc bác sĩ bình an",greeting,chào_hỏi,1.0
+Thuốc omeprazole uống trước hay sau ăn?,dosage_question,liều_lượng,0.7
+Cấp cứu! sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Thời gian đo huyết áp mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Thuốc ibuprofen có làm giảm tác dụng của gabapentin?,drug_interaction,tương_tác_thuốc,1.0
+Cách chăm sóc sức khỏe,general_health,sức_khỏe_tổng_quát,1.0
+Chế độ dinh dưỡng trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Đi ngon 971,unknown,không_xác_định,1.0
+Nhạc tốt 572,unknown,không_xác_định,1.0
+Cách thải độc cơ thể hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Cách sống khỏe với mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+từ tối qua ho,symptom_inquiry,triệu_chứng,0.8
+Cách tập thể dục hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Chế độ dinh dưỡng cholesterol cao?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Tôi bị đau họng,symptom_inquiry,triệu_chứng,0.7
+Nhạc vui 814,unknown,không_xác_định,1.0
+Khi nào cần test dị ứng?,medical_procedure,thủ_thuật_y_tế,1.0
+Từ sáng mệt mỏi,symptom_inquiry,triệu_chứng,0.7
+Cảm thấy ho khan,symptom_inquiry,triệu_chứng,0.8
+Sau khi uống aspirin bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Cần bác sĩ gấp: sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Xem ngon 590,unknown,không_xác_định,1.0
+Bí quyết để chống lão hóa?,general_health,sức_khỏe_tổng_quát,1.0
+Có dấu hiệu ngứa,symptom_inquiry,triệu_chứng,0.7
+Đi ngon 839,unknown,không_xác_định,1.0
+"Chào buổi chiều, cảm ơn chuyên gia đã hỗ trợ",greeting,chào_hỏi,1.0
+Hiệu quả của đo huyết áp ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Liều lượng thuốc omeprazole,dosage_question,liều_lượng,0.7
+Lưu ý khi dùng omeprazole,side_effects,tác_dụng_phụ,0.7
+Người bệnh suy tim độ 3 có thể phẫu thuật thay khớp háng được không?,emergency,emergency,1.0
+Kinh nghiệm giữ sức khỏe hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+"Hi, cảm ơn cô đã hỗ trợ",greeting,chào_hỏi,1.0
+Thực phẩm nên tránh khi cholesterol cao?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Đi tốt 564,unknown,không_xác_định,1.0
+Có nên ngừng uống paracetamol không vì bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Thuốc omeprazole uống lúc nào?,dosage_question,liều_lượng,0.7
+Tôi có triệu chứng sốt,symptom_inquiry,triệu_chứng,0.7
+Liều khởi đầu của ibuprofen,dosage_question,liều_lượng,1.0
+Nhạc hay 289,unknown,không_xác_định,1.0
+Finasteride có thể gây rối loạn chức năng sinh dục nam không?,side_effects,side_effects,1.0
+Cấp cứu! tim ngừng đập,emergency,cấp_cứu,1.0
+Làm sao để chữa ho có đờm?,symptom_inquiry,triệu_chứng,0.8
+Tác dụng của thuốc paracetamol,drug_question,thuốc,1.0
+Thuốc aspirin làm tôi mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Phim hay 810,unknown,không_xác_định,1.0
+lâu nay đau đầu,symptom_inquiry,triệu_chứng,0.8
+Khoảng cách giữa các lần uống metformin,dosage_question,liều_lượng,0.7
+Kinh nghiệm giữ dáng hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+Tôi thấy kiệt sức,symptom_inquiry,triệu_chứng,0.8
+lorem ipsum,unknown,không_xác_định,1.0
+Ăn kiêng keto có tốt không?,diet_lifestyle,diet_lifestyle,1.0
+"Chào buổi chiều, chúc bác sĩ sức khỏe",greeting,chào_hỏi,1.0
+Liều khởi đầu của aspirin,dosage_question,liều_lượng,1.0
+Thuốc omeprazole có làm giảm tác dụng của digoxin?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc acetylsalicylic acid uống bao nhiêu viên,dosage_question,liều_lượng,0.8
+Thông tin về aspirin,drug_question,thuốc,1.0
+Có dấu hiệu táo bón,symptom_inquiry,triệu_chứng,0.7
+Phối hợp amoxicillin và morphine có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Ăn hay 623,unknown,không_xác_định,1.0
+Gần đây mệt mỏi,symptom_inquiry,triệu_chứng,0.7
+Làm sao để tập thể dục an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Xem tốt 997,unknown,không_xác_định,1.0
+metformin dùng để làm gì?,drug_question,thuốc,0.7
+Sau khi uống paracetamol bị đau đầu,side_effects,tác_dụng_phụ,1.0
+"Chào, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+omeprazole có hiệu quả không?,drug_question,thuốc,0.7
+tháng này ho,symptom_inquiry,triệu_chứng,0.8
+Gấp! đột quỵ,emergency,cấp_cứu,1.0
+Thuốc aspirin có ảnh hưởng đến warfarin?,drug_interaction,tương_tác_thuốc,1.0
+Ăn vui 376,unknown,không_xác_định,1.0
+Làm thế nào để tăng cường trí nhớ?,general_health,sức_khỏe_tổng_quát,1.0
+Ăn vui 698,unknown,không_xác_định,1.0
+Chi phí MRI não bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+Cần uống thuốc amoxicillin bao lâu,drug_question,thuốc,1.0
+Cách sử dụng paracetamol đúng,dosage_question,liều_lượng,1.0
+Thuốc gì chữa đau bụng?,symptom_inquiry,triệu_chứng,0.7
+mới đây đau bụng,symptom_inquiry,triệu_chứng,0.8
+Tác dụng phụ của aspirin,side_effects,tác_dụng_phụ,1.0
+Công dụng của paracetamol,drug_question,thuốc,0.7
+Uống amoxicillin xong bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Đi đẹp 179,unknown,không_xác_định,1.0
+"Tôi đang uống lisinopril, có thể uống thêm gabapentin?",drug_interaction,tương_tác_thuốc,1.0
+Cảm thấy kiệt sức,symptom_inquiry,triệu_chứng,0.8
+aspirin là thuốc gì,drug_question,thuốc,1.0
+Bí quyết để tăng cường miễn dịch?,general_health,sức_khỏe_tổng_quát,1.0
+Hello thầy thuốc ơi,greeting,chào_hỏi,1.0
+Hội chứng Stevens-Johnson do carbamazepine có nguy hiểm không?,emergency,emergency,1.0
+Cần làm gì để giảm stress?,general_health,sức_khỏe_tổng_quát,1.0
+Có nên ngừng uống acetaminophen không vì bị mệt mỏi,side_effects,tác_dụng_phụ,0.8
+paracetamol có hiệu quả không?,drug_question,thuốc,0.7
+Có triệu chứng nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Đi đẹp 770,unknown,không_xác_định,1.0
+Có dấu hiệu mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+tháng này đau đầu,symptom_inquiry,triệu_chứng,0.8
+"Kính chào, rất vui được gặp thầy thuốc",greeting,chào_hỏi,1.0
+Thuốc amoxicillin uống lúc nào,dosage_question,liều_lượng,1.0
+Chị ấy bị đau đầu,symptom_inquiry,triệu_chứng,1.0
+Làm sao để chữa chán ăn?,symptom_inquiry,triệu_chứng,0.7
+Thuốc aspirin có tác dụng gì,drug_question,thuốc,1.0
+Công dụng của omeprazole,drug_question,thuốc,0.7
+Xem đẹp 279,unknown,không_xác_định,1.0
+Đi vui 818,unknown,không_xác_định,1.0
+Tác hại của thuốc Brufen,side_effects,tác_dụng_phụ,0.8
+hôm nay đau bụng,symptom_inquiry,triệu_chứng,0.8
+Thuốc metformin có làm giảm tác dụng của vitamin C?,drug_interaction,tương_tác_thuốc,1.0
+Phim hay 493,unknown,không_xác_định,1.0
+Liệu lisinopril và prednisolone có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Tôi có triệu chứng ngứa,symptom_inquiry,triệu_chứng,0.7
+Có thể dùng paracetamol cùng với prednisolone không?,drug_interaction,tương_tác_thuốc,1.0
+Báo động đỏ: đột quỵ,emergency,cấp_cứu,1.0
+Ăn hay 137,unknown,không_xác_định,1.0
+Khẩn cấp: sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Từ hôm qua sốt,symptom_inquiry,triệu_chứng,1.0
+Phim tốt 417,unknown,không_xác_định,1.0
+Ăn ngon 616,unknown,không_xác_định,1.0
+Thuốc paracetamol có gây đau đầu không,side_effects,tác_dụng_phụ,1.0
+Nhạc ngon 947,unknown,không_xác_định,1.0
+Con tôi bị nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Từ sáng đau bụng,symptom_inquiry,triệu_chứng,0.7
+Tôi bị táo bón,symptom_inquiry,triệu_chứng,0.7
+Gặp phải tình trạng ho,symptom_inquiry,triệu_chứng,1.0
+Làm thế nào để phòng bệnh?,general_health,sức_khỏe_tổng_quát,1.0
+sốt là bệnh gì?,symptom_inquiry,triệu_chứng,1.0
+Help! gãy xương hở,emergency,cấp_cứu,1.0
+Từ sáng chán ăn,symptom_inquiry,triệu_chứng,0.7
+Thói quen tốt cho đau khớp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Phim hay 557,unknown,không_xác_định,1.0
+Lối sống lành mạnh với tim mạch?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Có ai ở đó không?,greeting,chào_hỏi,1.0
+"Đang dùng metformin, có được uống tramadol?",drug_interaction,tương_tác_thuốc,1.0
+Thuốc losartan có tương tác với digoxin không?,drug_interaction,tương_tác_thuốc,1.0
+"Đang dùng amlodipine, có được uống gabapentin?",drug_interaction,tương_tác_thuốc,1.0
+Chị ấy bị mệt lả,symptom_inquiry,triệu_chứng,0.8
+Uống amoxicillin xong bị buồn nôn,side_effects,tác_dụng_phụ,1.0
+Em bé bị sốt,symptom_inquiry,triệu_chứng,1.0
+Ông ấy bị nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Bí quyết sống khỏe mạnh với cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Chào buổi tối,greeting,chào_hỏi,1.0
+Uống amoxicillin xong bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Lịch uống thuốc amoxicillin,dosage_question,liều_lượng,0.7
+SOS! chảy máu nhiều,emergency,cấp_cứu,1.0
+Thuốc amlodipine có làm giảm tác dụng của morphine?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc ibuprofen làm tôi mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Đi đâu chơi,unknown,không_xác_định,1.0
+Làm sao để giữ sức khỏe an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+"Chào bác sĩ, cảm ơn thầy đã hỗ trợ",greeting,chào_hỏi,1.0
+Hello doctor,greeting,chào_hỏi,1.0
+Sau khi uống acetylsalicylic acid bị chóng mặt,side_effects,tác_dụng_phụ,0.8
+Đi vui 953,unknown,không_xác_định,1.0
+Liều tối đa của Amoxil,dosage_question,liều_lượng,0.8
+Con tôi có chán ăn,symptom_inquiry,triệu_chứng,0.7
+"Chào bác sĩ, xin chào!",greeting,chào_hỏi,1.0
+Báo động đỏ: sốc phản vệ,emergency,cấp_cứu,1.0
+Hướng dẫn sử dụng acetylsalicylic acid,dosage_question,liều_lượng,0.8
+Bị đau dạ dày phải làm sao?,symptom_inquiry,triệu_chứng,0.8
+lâu nay sốt,symptom_inquiry,triệu_chứng,0.8
+Chuẩn bị gì trước khi nội soi phế quản?,medical_procedure,thủ_thuật_y_tế,1.0
+Phối hợp losartan và tramadol có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+"Đang dùng amoxicillin, có được uống insulin?",drug_interaction,tương_tác_thuốc,1.0
+"Xin kính chào, xin chào!",greeting,chào_hỏi,1.0
+Mấy ngày nay mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Trẻ em uống paracetamol thế nào?,dosage_question,liều_lượng,1.0
+Tình huống khẩn cấp: sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Thông tin về amoxicillin,drug_question,thuốc,1.0
+Liều dùng amoxicillin cho người lớn,dosage_question,liều_lượng,0.7
+"Xin kính chào, rất vui được gặp thầy",greeting,chào_hỏi,1.0
+Báo động đỏ: khó thở nghiêm trọng,emergency,cấp_cứu,1.0
+Hiệu quả của đo mật độ xương ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Bí quyết để giữ dáng?,general_health,sức_khỏe_tổng_quát,1.0
+Lịch uống thuốc paracetamol,dosage_question,liều_lượng,0.7
+Nhạc ngon 168,unknown,không_xác_định,1.0
+Thuốc acetylsalicylic acid gây ra triệu chứng gì,side_effects,tác_dụng_phụ,0.8
+Tác dụng phụ của omeprazole,side_effects,tác_dụng_phụ,0.7
+Thông tin về thuốc cetirizine,drug_question,thuốc,0.7
+"Chào bác sĩ, rất vui được gặp quý vị",greeting,chào_hỏi,1.0
+Xin chào thầy ơi,greeting,chào_hỏi,1.0
+Chị ấy bị ho,symptom_inquiry,triệu_chứng,1.0
+"Đang dùng atorvastatin, có được uống warfarin?",drug_interaction,tương_tác_thuốc,1.0
+Đi ngon 752,unknown,không_xác_định,1.0
+Thay thế cho chụp CT có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Thuốc amoxicillin dùng để làm gì,drug_question,thuốc,1.0
+Khẩn cấp! Bé trai 2 tuổi nuốt phải pin cúc áo và khóc thét,emergency,emergency,1.0
+Tôi có triệu chứng chán ăn,symptom_inquiry,triệu_chứng,0.7
+Thuốc acetylsalicylic acid uống lúc nào,dosage_question,liều_lượng,0.8
+Làm thế nào để bảo vệ mắt?,general_health,sức_khỏe_tổng_quát,1.0
+Hôm nay mệt mỏi,symptom_inquiry,triệu_chứng,0.7
+"Xin chào, cảm ơn cô đã hỗ trợ",greeting,chào_hỏi,1.0
+Gấp! mất ý thức,emergency,cấp_cứu,1.0
+Thuốc ibuprofen gây ra triệu chứng gì,side_effects,tác_dụng_phụ,1.0
+Cần uống thuốc ibuprofen bao lâu,drug_question,thuốc,1.0
+ho là bệnh gì?,symptom_inquiry,triệu_chứng,1.0
+Có dấu hiệu đau đầu,symptom_inquiry,triệu_chứng,1.0
+Cách sống khỏe với tim mạch?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Hôm nay ngứa,symptom_inquiry,triệu_chứng,0.7
+Công dụng của amoxicillin,drug_question,thuốc,0.7
+Phim tốt 146,unknown,không_xác_định,1.0
+Ai nên thực hiện chụp CT?,medical_procedure,thủ_thuật_y_tế,1.0
+Đi ngon 110,unknown,không_xác_định,1.0
+"Đang dùng ibuprofen, có được uống warfarin?",drug_interaction,tương_tác_thuốc,1.0
+Phim vui 902,unknown,không_xác_định,1.0
+"Chúc, xin chào!",greeting,chào_hỏi,1.0
+"Chào bác sĩ, chúc chuyên gia buổi sáng tốt lành",greeting,chào_hỏi,1.0
+Anh ấy bị đau tụy,symptom_inquiry,triệu_chứng,0.8
+Quy trình chụp CT như thế nào?,medical_procedure,thủ_thuật_y_tế,1.0
+Liệu atorvastatin và warfarin có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Có nên ngừng uống Brufen không vì bị mệt mỏi,side_effects,tác_dụng_phụ,0.8
+Ăn ngon 269,unknown,không_xác_định,1.0
+Cần bác sĩ gấp: đột quỵ,emergency,cấp_cứu,1.0
+Sau khi uống paracetamol bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Có dấu hiệu ho,symptom_inquiry,triệu_chứng,1.0
+Thuốc gì chữa chán ăn?,symptom_inquiry,triệu_chứng,0.7
+Metoprolol và amlodipine dùng chung có an toàn?,drug_interaction,drug_interaction,1.0
+Tôi thấy ho,symptom_inquiry,triệu_chứng,1.0
+Gần đây sốt,symptom_inquiry,triệu_chứng,0.7
+"Chúc, cảm ơn thầy thuốc đã hỗ trợ",greeting,chào_hỏi,1.0
+Thói quen tốt cho béo phì?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Uống thuốc acetylsalicylic acid như thế nào,dosage_question,liều_lượng,0.8
+Thời gian nội soi phế quản mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Hướng dẫn sử dụng aspirin,dosage_question,liều_lượng,1.0
+Tác dụng không mong muốn của paracetamol là gì?,side_effects,tác_dụng_phụ,1.0
+Cần uống thuốc aspirin bao lâu,drug_question,thuốc,1.0
+Điều chỉnh lối sống khi thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cần bác sĩ gấp: chảy máu nhiều,emergency,cấp_cứu,1.0
+Phản ứng phụ của ibuprofen,side_effects,tác_dụng_phụ,0.7
+Phương pháp tăng cường trí nhớ tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Đi tốt 829,unknown,không_xác_định,1.0
+Thay thế cho chụp X-quang có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc ngon 564,unknown,không_xác_định,1.0
+Uống omeprazole có hại gì không?,side_effects,tác_dụng_phụ,0.7
+Thành phần của aspirin,drug_question,thuốc,0.7
+Tình trạng nguy kịch: tim ngừng đập,emergency,cấp_cứu,1.0
+Khi nào cần chụp CT?,medical_procedure,thủ_thuật_y_tế,1.0
+Trẻ em uống acetylsalicylic acid thế nào?,dosage_question,liều_lượng,0.8
+Thuốc aspirin có gây chóng mặt không,side_effects,tác_dụng_phụ,1.0
+Hướng dẫn ngủ ngon chi tiết?,general_health,sức_khỏe_tổng_quát,1.0
+Hôm nay chán ăn,symptom_inquiry,triệu_chứng,0.7
+Làm sao để chữa sốt?,symptom_inquiry,triệu_chứng,1.0
+Thay thế cho xét nghiệm máu có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Uống paracetamol có ảnh hưởng gì,side_effects,tác_dụng_phụ,1.0
+Thuốc paracetamol uống trước hay sau ăn,dosage_question,liều_lượng,1.0
+Con tôi bị đau bụng,symptom_inquiry,triệu_chứng,1.0
+Hello doctor ơi,greeting,chào_hỏi,1.0
+Một ngày uống omeprazole mấy lần?,dosage_question,liều_lượng,0.7
+Thông tin về thuốc omeprazole,drug_question,thuốc,0.7
+Đi tốt 262,unknown,không_xác_định,1.0
+Thuốc aspirin uống lúc nào,dosage_question,liều_lượng,1.0
+Làm thế nào để thải độc cơ thể?,general_health,sức_khỏe_tổng_quát,1.0
+"Hi, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+"Chào bác sĩ, cảm ơn cô đã hỗ trợ",greeting,chào_hỏi,1.0
+Thuốc gì chữa đau đầu?,symptom_inquiry,triệu_chứng,0.7
+Liều khởi đầu của paracetamol,dosage_question,liều_lượng,1.0
+"Chào bạn, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Khẩn cấp: tim ngừng đập,emergency,cấp_cứu,1.0
+"Chúc, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Tôi bị mệt lả,symptom_inquiry,triệu_chứng,0.8
+SOS! co giật,emergency,cấp_cứu,1.0
+Xem hay 247,unknown,không_xác_định,1.0
+Tập thể dục như thế nào khi hen suyễn?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Đi vui 699,unknown,không_xác_định,1.0
+"Hi, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Quy trình nội soi dạ dày như thế nào?,medical_procedure,thủ_thuật_y_tế,1.0
+Phòng ngừa bệnh tật,general_health,sức_khỏe_tổng_quát,1.0
+Có triệu chứng đau đầu,symptom_inquiry,triệu_chứng,1.0
+Chúc anh/chị ơi,greeting,chào_hỏi,1.0
+Giá thuốc ibuprofen bao nhiêu,drug_question,thuốc,1.0
+Chế độ dinh dưỡng tim mạch?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Đi đẹp 466,unknown,không_xác_định,1.0
+Phối hợp omeprazole và warfarin có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+"Tôi đang uống atorvastatin, có thể uống thêm calcium?",drug_interaction,tương_tác_thuốc,1.0
+Uống acetaminophen xong bị đau đầu,side_effects,tác_dụng_phụ,0.8
+Thuốc aspirin làm tôi đau đầu,side_effects,tác_dụng_phụ,1.0
+Lịch uống thuốc omeprazole,dosage_question,liều_lượng,0.7
+Khoảng cách giữa các lần uống amoxicillin,dosage_question,liều_lượng,0.7
+omeprazole có an toàn không?,side_effects,tác_dụng_phụ,0.7
+Đi đẹp 420,unknown,không_xác_định,1.0
+SOS! Người phụ nữ 45 tuổi bị va chạm xe máy gãy cẳng chân hở,emergency,emergency,1.0
+Tôi có triệu chứng táo bón,symptom_inquiry,triệu_chứng,0.7
+"Chào buổi sáng, rất vui được gặp bạn",greeting,chào_hỏi,1.0
+Hôm nay tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Xin kính chào thầy ơi,greeting,chào_hỏi,1.0
+Tôi bị tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+"Chào cô, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Thuốc paracetamol uống bao nhiêu viên,dosage_question,liều_lượng,1.0
+Thuốc ibuprofen có tương tác với gabapentin không?,drug_interaction,tương_tác_thuốc,1.0
+Sau khi uống acetylsalicylic acid bị đau đầu,side_effects,tác_dụng_phụ,0.8
+Hướng dẫn sử dụng paracetamol,dosage_question,liều_lượng,1.0
+Ông ấy bị đau đầu,symptom_inquiry,triệu_chứng,1.0
+Uống thuốc aspirin như thế nào,dosage_question,liều_lượng,1.0
+Xin chào bạn ơi,greeting,chào_hỏi,1.0
+Tuần này táo bón,symptom_inquiry,triệu_chứng,0.7
+Bí quyết sống khỏe mạnh với gout?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc amoxicillin uống trước hay sau ăn,dosage_question,liều_lượng,1.0
+Tình trạng nguy kịch: đột quỵ,emergency,cấp_cứu,1.0
+Thuốc paracetamol dùng để làm gì,drug_question,thuốc,1.0
+kiệt sức là bệnh gì?,symptom_inquiry,triệu_chứng,0.8
+Con tôi có ngứa,symptom_inquiry,triệu_chứng,0.7
+Liều lượng thuốc metformin,dosage_question,liều_lượng,0.7
+blah blah,unknown,không_xác_định,1.0
+Chế độ ăn cho người cholesterol cao?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ăn ngon 110,unknown,không_xác_định,1.0
+Thuốc metformin có tương tác với vitamin C không?,drug_interaction,tương_tác_thuốc,1.0
+Liều lượng thuốc acetylsalicylic acid,drug_question,thuốc,0.8
+Bà ngoại bị ho khan,symptom_inquiry,triệu_chứng,0.8
+"Tôi đang uống amlodipine, có thể uống thêm gabapentin?",drug_interaction,tương_tác_thuốc,1.0
+Quy tắc thải độc cơ thể cơ bản?,general_health,sức_khỏe_tổng_quát,1.0
+Con tôi có đau họng,symptom_inquiry,triệu_chứng,0.7
+Đi đẹp 522,unknown,không_xác_định,1.0
+Tuần này đau bụng,symptom_inquiry,triệu_chứng,1.0
+Uống thuốc paracetamol như thế nào,dosage_question,liều_lượng,1.0
+Nhạc nào hay,unknown,không_xác_định,1.0
+Có dấu hiệu chán ăn,symptom_inquiry,triệu_chứng,0.7
+Đi tốt 663,unknown,không_xác_định,1.0
+Ăn tốt 703,unknown,không_xác_định,1.0
+Vợ/chồng tôi sốt,symptom_inquiry,triệu_chứng,0.7
+Thời gian xét nghiệm nước tiểu mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Đang bị đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Nhạc ngon 139,unknown,không_xác_định,1.0
+Phương pháp chống lão hóa tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Bác sĩ kê đơn cefixime 200mg uống 12 tiếng một lần trong 7 ngày,symptom_inquiry,symptom_inquiry,1.0
+Tình huống khẩn cấp: co giật,emergency,cấp_cứu,1.0
+Đang bị đau đầu,symptom_inquiry,triệu_chứng,1.0
+Ăn vui 284,unknown,không_xác_định,1.0
+Gấp! co giật,emergency,cấp_cứu,1.0
+Tuần này ho,symptom_inquiry,triệu_chứng,1.0
+Hướng dẫn sử dụng amoxicillin,dosage_question,liều_lượng,1.0
+"Hi, cảm ơn anh/chị đã hỗ trợ",greeting,chào_hỏi,1.0
+Đang bị sốt,symptom_inquiry,triệu_chứng,1.0
+Khi nào cần nội soi phế quản?,medical_procedure,thủ_thuật_y_tế,1.0
+Rủi ro của sinh thiết là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Từ hôm qua mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Xem tốt 326,unknown,không_xác_định,1.0
+Gặp phải tình trạng đau đầu,symptom_inquiry,triệu_chứng,1.0
+paracetamol uống như thế nào?,drug_question,thuốc,1.0
+Thành phần của omeprazole,drug_question,thuốc,0.7
+Thực phẩm nên tránh khi mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Em bé bị đau tụy,symptom_inquiry,triệu_chứng,0.8
+Ăn ngon 539,unknown,không_xác_định,1.0
+Nhạc tốt 555,unknown,không_xác_định,1.0
+Xem tốt 170,unknown,không_xác_định,1.0
+Chống chỉ định của aspirin,side_effects,tác_dụng_phụ,0.7
+bbbccc,unknown,không_xác_định,1.0
+Gần đây tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Tập thể dục như thế nào khi tiểu đường?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Tuần này đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Thay thế cho điện tim có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Gặp phải tình trạng mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Làm sao để chữa ngứa?,symptom_inquiry,triệu_chứng,0.7
+Thuốc paracetamol làm tôi mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Cần uống thuốc paracetamol bao lâu,drug_question,thuốc,1.0
+Ăn hay 152,unknown,không_xác_định,1.0
+Tác hại của thuốc acetaminophen,side_effects,tác_dụng_phụ,0.8
+Ăn đẹp 944,unknown,không_xác_định,1.0
+Cảm thấy ho,symptom_inquiry,triệu_chứng,1.0
+Phim ngon 967,unknown,không_xác_định,1.0
+"Xin chào, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+Cách sống khỏe với cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thời tiết thế nào,unknown,không_xác_định,1.0
+Vợ/chồng tôi chán ăn,symptom_inquiry,triệu_chứng,0.7
+A và B có kỵ nhau không?,drug_interaction,drug_interaction,1.0
+Xem đẹp 661,unknown,không_xác_định,1.0
+Thuốc ibuprofen chữa bệnh gì,drug_question,thuốc,1.0
+Kinh nghiệm ngủ ngon hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+đau dạ dày là bệnh gì?,symptom_inquiry,triệu_chứng,0.8
+Thuốc lisinopril có tương tác với insulin không?,drug_interaction,tương_tác_thuốc,1.0
+Tình huống khẩn cấp: sốc phản vệ,emergency,cấp_cứu,1.0
+Triệu chứng đau đầu là gì?,symptom_inquiry,triệu_chứng,0.7
+Lưu ý khi dùng cetirizine,side_effects,tác_dụng_phụ,0.7
+Help! chảy máu nhiều,emergency,cấp_cứu,1.0
+Giá thuốc aspirin bao nhiêu,drug_question,thuốc,1.0
+Tuần này đau đầu,symptom_inquiry,triệu_chứng,1.0
+Cần cấp cứu ngay vì khó thở nghiêm trọng,emergency,cấp_cứu,1.0
+Uống amoxicillin có bị chóng mặt không?,side_effects,tác_dụng_phụ,1.0
+Bà ngoại bị đau đầu,symptom_inquiry,triệu_chứng,1.0
+Quy tắc phòng bệnh cơ bản?,general_health,sức_khỏe_tổng_quát,1.0
+Có thể dùng losartan cùng với prednisolone không?,drug_interaction,tương_tác_thuốc,1.0
+Cần làm gì để phòng bệnh?,general_health,sức_khỏe_tổng_quát,1.0
+Cách ăn uống lành mạnh hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Khẩn cấp: chảy máu nhiều,emergency,cấp_cứu,1.0
+Tác hại của thuốc cetirizine,side_effects,tác_dụng_phụ,0.7
+Nhạc tốt 347,unknown,không_xác_định,1.0
+Chế độ ăn cho người thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Khi nào cần xét nghiệm nước tiểu?,medical_procedure,thủ_thuật_y_tế,1.0
+Ăn ngon 828,unknown,không_xác_định,1.0
+Nhạc đẹp 372,unknown,không_xác_định,1.0
+Thông tin về thuốc metformin,drug_question,thuốc,0.7
+Cách sống khỏe với gan nhiễm mỡ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cách giữ ấm mùa đông hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+paracetamol có tác dụng phụ gì không,drug_question,thuốc,1.0
+Gần đây đau đầu,symptom_inquiry,triệu_chứng,0.7
+Thuốc amoxicillin làm tôi chóng mặt,side_effects,tác_dụng_phụ,1.0
+Xem vui 318,unknown,không_xác_định,1.0
+Cách dùng omeprazole đúng cách,dosage_question,liều_lượng,0.7
+Tác dụng phụ của acetaminophen,side_effects,tác_dụng_phụ,0.8
+Hướng dẫn sử dụng ibuprofen,dosage_question,liều_lượng,1.0
+Bí quyết sống khỏe mạnh với gan nhiễm mỡ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+omeprazole dùng để làm gì?,drug_question,thuốc,0.7
+Phim đẹp 594,unknown,không_xác_định,1.0
+Cấp cứu! đau ngực dữ dội,emergency,cấp_cứu,1.0
+Cần cấp cứu ngay vì mất ý thức,emergency,cấp_cứu,1.0
+Thuốc cetirizine chữa bệnh gì?,drug_question,thuốc,0.7
+Tác hại của thuốc aspirin,side_effects,tác_dụng_phụ,1.0
+Chuẩn bị gì trước khi siêu âm tim?,medical_procedure,thủ_thuật_y_tế,1.0
+Phim hay 302,unknown,không_xác_định,1.0
+Nhạc tốt 509,unknown,không_xác_định,1.0
+Chi phí phẫu thuật bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+Gấp! tim ngừng đập,emergency,cấp_cứu,1.0
+Thuốc amoxicillin làm tôi buồn nôn,side_effects,tác_dụng_phụ,1.0
+"Chào, cảm ơn ông/bà đã hỗ trợ",greeting,chào_hỏi,1.0
+Sau nội soi phế quản cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Thuốc acetaminophen có hiệu quả không,drug_question,thuốc,0.8
+Nhạc đẹp 435,unknown,không_xác_định,1.0
+Xem hay 995,unknown,không_xác_định,1.0
+Sau khi uống amoxicillin bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Sau khi uống aspirin bị buồn nôn,side_effects,tác_dụng_phụ,1.0
+Tôi nên chống lão hóa như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Gặp phải tình trạng đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Thuốc lisinopril có tương tác với calcium không?,drug_interaction,tương_tác_thuốc,1.0
+Điều chỉnh lối sống khi cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Uống acetaminophen có bị đau đầu không?,side_effects,tác_dụng_phụ,0.8
+Triệu chứng chán ăn là gì?,symptom_inquiry,triệu_chứng,0.7
+Một ngày uống paracetamol mấy lần?,dosage_question,liều_lượng,0.7
+Thuốc cetirizine có độc không?,side_effects,tác_dụng_phụ,0.7
+"Hello, chúc thầy buổi sáng tốt lành",greeting,chào_hỏi,1.0
+Thuốc ibuprofen có tác dụng gì,drug_question,thuốc,1.0
+Thuốc amoxicillin có độc hại không,side_effects,tác_dụng_phụ,1.0
+Thực phẩm nên tránh khi trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Liều lượng thuốc ibuprofen,drug_question,thuốc,1.0
+Ăn đẹp 170,unknown,không_xác_định,1.0
+Cách uống paracetamol,dosage_question,liều_lượng,0.7
+Ăn hay 488,unknown,không_xác_định,1.0
+Liệu atorvastatin và gabapentin có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Phim tốt 380,unknown,không_xác_định,1.0
+Liệu ibuprofen và morphine có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Thành phần của amoxicillin,drug_question,thuốc,0.7
+Khẩn cấp: đau ngực dữ dội,emergency,cấp_cứu,1.0
+Phim ngon 244,unknown,không_xác_định,1.0
+Thuốc atorvastatin có tương tác với morphine không?,drug_interaction,tương_tác_thuốc,1.0
+Liều dùng paracetamol cho người lớn,dosage_question,liều_lượng,0.7
+Thuốc omeprazole có độc không?,side_effects,tác_dụng_phụ,0.7
+Thuốc metformin uống lúc nào?,dosage_question,liều_lượng,0.7
+SOS! mất ý thức,emergency,cấp_cứu,1.0
+Đi đẹp 956,unknown,không_xác_định,1.0
+"Tôi đang uống omeprazole, có thể uống thêm iron?",drug_interaction,tương_tác_thuốc,1.0
+Uống acetylsalicylic acid có bị chóng mặt không?,side_effects,tác_dụng_phụ,0.8
+Rủi ro của phẫu thuật là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Uống thuốc amoxicillin như thế nào,dosage_question,liều_lượng,1.0
+Tôi thấy mệt lả,symptom_inquiry,triệu_chứng,0.8
+Cách cải thiện tuần hoàn hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Hướng dẫn chăm sóc da chi tiết?,general_health,sức_khỏe_tổng_quát,1.0
+Uống paracetamol xong bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Bí quyết sống khỏe mạnh với cholesterol cao?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Nhạc hay 638,unknown,không_xác_định,1.0
+Tuần này mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Làm sao để ngủ ngon an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Tương tác giữa lisinopril và digoxin như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+Hiệu quả của test dị ứng ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Xuất hiện triệu chứng tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Thuốc ibuprofen có gây buồn nôn không,side_effects,tác_dụng_phụ,1.0
+Hôm nay sốt,symptom_inquiry,triệu_chứng,0.7
+Kết hợp paracetamol với gabapentin có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+đau bụng là bệnh gì?,symptom_inquiry,triệu_chứng,1.0
+Xem hay 921,unknown,không_xác_định,1.0
+"Xin chào anh/chị, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Quy tắc chăm sóc da cơ bản?,general_health,sức_khỏe_tổng_quát,1.0
+Cách sử dụng acetaminophen đúng,dosage_question,liều_lượng,0.8
+Bị kiệt sức phải làm sao?,symptom_inquiry,triệu_chứng,0.8
+Tôi thấy đau tụy,symptom_inquiry,triệu_chứng,0.8
+"Chào buổi chiều bạn, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Sau phẫu thuật cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+acetylsalicylic acid uống như thế nào?,drug_question,thuốc,0.8
+Xem tốt 884,unknown,không_xác_định,1.0
+Gấp! sốc phản vệ,emergency,cấp_cứu,1.0
+Cần làm gì để ngủ ngon?,general_health,sức_khỏe_tổng_quát,1.0
+Cần cấp cứu ngay vì đột quỵ,emergency,cấp_cứu,1.0
+Ăn đẹp 883,unknown,không_xác_định,1.0
+Thuốc acetaminophen có gây buồn nôn không,side_effects,tác_dụng_phụ,0.8
+Rủi ro của xét nghiệm nước tiểu là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Thuốc rosuvastatin có tương tác với thuốc tim digitalis?,drug_interaction,drug_interaction,1.0
+Thuốc aspirin có độc hại không,side_effects,tác_dụng_phụ,1.0
+Tác dụng phụ của acetylsalicylic acid,side_effects,tác_dụng_phụ,0.8
+Cách điều trị ngứa,symptom_inquiry,triệu_chứng,0.7
+Đi đẹp 331,unknown,không_xác_định,1.0
+Giá thuốc acetylsalicylic acid bao nhiêu,drug_question,thuốc,0.8
+Có dấu hiệu tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Xem ngon 587,unknown,không_xác_định,1.0
+"Đang dùng omeprazole, có được uống tramadol?",drug_interaction,tương_tác_thuốc,1.0
+Uống amoxicillin có bị buồn nôn không?,side_effects,tác_dụng_phụ,1.0
+Đang bị sốt nhẹ,symptom_inquiry,triệu_chứng,0.8
+ibuprofen là thuốc gì,drug_question,thuốc,1.0
+Sau nội soi dạ dày cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Chống chỉ định của metformin,side_effects,tác_dụng_phụ,0.7
+Liều dùng của acetaminophen,dosage_question,liều_lượng,0.8
+"Tôi đang uống losartan, có thể uống thêm insulin?",drug_interaction,tương_tác_thuốc,1.0
+Tác dụng thuốc cetirizine,drug_question,thuốc,0.7
+"Kính chào bác sĩ, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Điều chỉnh lối sống khi mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc acetylsalicylic acid dùng để làm gì,drug_question,thuốc,0.8
+Em bé bị đau đầu,symptom_inquiry,triệu_chứng,1.0
+Tôi nên cải thiện tuần hoàn như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Ăn ngon 342,unknown,không_xác_định,1.0
+Tập thể dục như thế nào khi trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ăn vui 556,unknown,không_xác_định,1.0
+"Xin chào chuyên gia, tôi có câu hỏi",greeting,chào_hỏi,1.0
+cetirizine dùng để làm gì?,drug_question,thuốc,0.7
+Hôm nay đau đầu,symptom_inquiry,triệu_chứng,0.7
+Chào buổi sáng bạn!,greeting,chào_hỏi,1.0
+Uống aspirin xong bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Bị mệt mỏi phải làm sao?,symptom_inquiry,triệu_chứng,1.0
+"Chào buổi sáng thầy thuốc, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Con tôi có tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Khoảng cách giữa các lần uống paracetamol,dosage_question,liều_lượng,0.7
+Hướng dẫn tăng cường trí nhớ chi tiết?,general_health,sức_khỏe_tổng_quát,1.0
+"Chào, xin chào!",greeting,chào_hỏi,1.0
+Đi hay 310,unknown,không_xác_định,1.0
+Liều dùng aspirin cho người lớn,dosage_question,liều_lượng,0.7
+Tôi bị sốt nhẹ,symptom_inquiry,triệu_chứng,0.8
+Cần bác sĩ gấp: tim ngừng đập,emergency,cấp_cứu,1.0
+Ăn hay 599,unknown,không_xác_định,1.0
+Uống aspirin xong bị buồn nôn,side_effects,tác_dụng_phụ,1.0
+Nhạc ngon 238,unknown,không_xác_định,1.0
+Lưu ý khi dùng ibuprofen,side_effects,tác_dụng_phụ,0.7
+Thuốc aspirin chữa bệnh gì,drug_question,thuốc,1.0
+Tác dụng không mong muốn của aspirin là gì?,side_effects,tác_dụng_phụ,1.0
+Đi hay 491,unknown,không_xác_định,1.0
+Thói quen tốt cho thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Em bé bị ho,symptom_inquiry,triệu_chứng,1.0
+Uống thuốc ibuprofen như thế nào,dosage_question,liều_lượng,1.0
+Con tôi có mệt mỏi,symptom_inquiry,triệu_chứng,0.7
+Nhạc tốt 212,unknown,không_xác_định,1.0
+Cần làm gì để tăng cường miễn dịch?,general_health,sức_khỏe_tổng_quát,1.0
+"Chào, chúc thầy may mắn",greeting,chào_hỏi,1.0
+Nhạc ngon 871,unknown,không_xác_định,1.0
+Làm sao để phòng bệnh an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+aspirin uống như thế nào?,drug_question,thuốc,1.0
+Thuốc amoxicillin có tác dụng gì,drug_question,thuốc,1.0
+Báo động đỏ: ngộ độc nghiêm trọng,emergency,cấp_cứu,1.0
+Tôi có triệu chứng tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Phim hay 137,unknown,không_xác_định,1.0
+Nhạc ngon 433,unknown,không_xác_định,1.0
+Trẻ em uống acetaminophen thế nào?,dosage_question,liều_lượng,0.8
+Mẹ tôi bị đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Hiệu quả của siêu âm tim ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+từ tối qua mệt mỏi,symptom_inquiry,triệu_chứng,0.8
+Báo động đỏ: co giật,emergency,cấp_cứu,1.0
+Thay thế cho sinh thiết có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Có triệu chứng ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Nhạc vui 713,unknown,không_xác_định,1.0
+Sau sinh thiết cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Tác dụng thuốc omeprazole,drug_question,thuốc,0.7
+"Chào buổi sáng, rất vui được gặp quý vị",greeting,chào_hỏi,1.0
+Mấy ngày nay ho,symptom_inquiry,triệu_chứng,1.0
+Hiệu quả của phẫu thuật ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Kết hợp omeprazole với tramadol có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+Xem tốt 675,unknown,không_xác_định,1.0
+Liều dùng của paracetamol,dosage_question,liều_lượng,1.0
+Cho tôi hỏi,greeting,chào_hỏi,1.0
+Cách sử dụng thuốc aspirin,drug_question,thuốc,1.0
+Có thể dùng paracetamol cùng với warfarin không?,drug_interaction,tương_tác_thuốc,1.0
+Phối hợp paracetamol và warfarin có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc atorvastatin có ảnh hưởng đến prednisolone?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc Amoxil có gây buồn nôn không,side_effects,tác_dụng_phụ,0.8
+Làm sao để cải thiện tuần hoàn an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Từ sáng sốt,symptom_inquiry,triệu_chứng,0.7
+Ông ấy bị đau bụng,symptom_inquiry,triệu_chứng,1.0
+"Hi thầy thuốc, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Chào buổi sáng chuyên gia!,greeting,chào_hỏi,1.0
+Làm sao để chữa tiêu chảy?,symptom_inquiry,triệu_chứng,0.7
+Làm thế nào để giữ sức khỏe?,general_health,sức_khỏe_tổng_quát,1.0
+Chi phí điện tim bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+Tác hại của thuốc acetylsalicylic acid,side_effects,tác_dụng_phụ,0.8
+Uống ibuprofen có bị chóng mặt không?,side_effects,tác_dụng_phụ,1.0
+Thuốc aspirin có làm giảm tác dụng của tramadol?,drug_interaction,tương_tác_thuốc,1.0
+Hôm nay giá vàng tăng hay giảm?,unknown,không_xác_định,1.0
+Có thể dùng paracetamol cùng với tramadol không?,drug_interaction,tương_tác_thuốc,1.0
+Tác dụng của thuốc ibuprofen,drug_question,thuốc,1.0
+Điều chỉnh lối sống khi dạ dày?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ăn ngon 805,unknown,không_xác_định,1.0
+Phim vui 161,unknown,không_xác_định,1.0
+Thuốc ibuprofen làm tôi đau đầu,side_effects,tác_dụng_phụ,1.0
+cetirizine là thuốc gì?,drug_question,thuốc,0.7
+Sau khi uống ibuprofen bị đau đầu,side_effects,tác_dụng_phụ,1.0
+Chi phí nội soi dạ dày bao nhiêu?,medical_procedure,thủ_thuật_y_tế,1.0
+Ăn đẹp 493,unknown,không_xác_định,1.0
+Khẩn cấp: khó thở nghiêm trọng,emergency,cấp_cứu,1.0
+Uống paracetamol xong bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Cần làm gì để chăm sóc da?,general_health,sức_khỏe_tổng_quát,1.0
+Cần cấp cứu ngay vì chảy máu nhiều,emergency,cấp_cứu,1.0
+"Tôi đang uống paracetamol, có thể uống thêm calcium?",drug_interaction,tương_tác_thuốc,1.0
+Sau chụp CT cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc tốt 895,unknown,không_xác_định,1.0
+Điều chỉnh lối sống khi đau khớp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thuốc gì chữa tiêu chảy?,symptom_inquiry,triệu_chứng,0.7
+Thuốc amlodipine có làm giảm tác dụng của warfarin?,drug_interaction,tương_tác_thuốc,1.0
+"Hi quý vị, tôi có câu hỏi",greeting,chào_hỏi,1.0
+"Kính chào, cảm ơn bạn đã hỗ trợ",greeting,chào_hỏi,1.0
+Liệu aspirin và tramadol có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Sinh hoạt hàng ngày cho tim mạch?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ăn ngon 127,unknown,không_xác_định,1.0
+Thuốc gì chữa mệt mỏi?,symptom_inquiry,triệu_chứng,0.7
+Thuốc aspirin có an toàn không,drug_question,thuốc,1.0
+"Xin chào, xin chào!",greeting,chào_hỏi,1.0
+"Tôi đang uống A, giờ uống thêm B có sao không?",drug_interaction,drug_interaction,1.0
+Phối hợp lisinopril và tramadol có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Liều lượng thuốc cetirizine,dosage_question,liều_lượng,0.7
+Thuốc aspirin làm tôi chóng mặt,side_effects,tác_dụng_phụ,1.0
+Uống paracetamol có bị mệt mỏi không?,side_effects,tác_dụng_phụ,1.0
+Thực phẩm nên tránh khi tiểu đường?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Nhạc hay 602,unknown,không_xác_định,1.0
+Bí quyết để giữ sức khỏe?,general_health,sức_khỏe_tổng_quát,1.0
+"Hello, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Thuốc paracetamol có ảnh hưởng đến warfarin?,drug_interaction,tương_tác_thuốc,1.0
+amoxicillin là thuốc gì,drug_question,thuốc,1.0
+Chào buổi chiều,greeting,chào_hỏi,1.0
+"Đang dùng atorvastatin, có được uống iron?",drug_interaction,tương_tác_thuốc,1.0
+"Hello, cảm ơn doctor đã hỗ trợ",greeting,chào_hỏi,1.0
+Cách sử dụng thuốc paracetamol,drug_question,thuốc,1.0
+Thuốc Brufen có hại gì không,side_effects,tác_dụng_phụ,0.8
+Chị ấy bị đau bụng,symptom_inquiry,triệu_chứng,1.0
+Thay thế cho siêu âm tim có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Thời gian uống omeprazole,dosage_question,liều_lượng,0.7
+Bí quyết sống khỏe mạnh với đau khớp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cách phòng bệnh hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc omeprazole có tương tác với prednisolone không?,drug_interaction,tương_tác_thuốc,1.0
+Nhạc hay 505,unknown,không_xác_định,1.0
+Cách điều trị tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Hiệu quả của chụp CT ra sao?,medical_procedure,thủ_thuật_y_tế,1.0
+Làm thế nào để cải thiện tuần hoàn?,general_health,sức_khỏe_tổng_quát,1.0
+*Liều lượng* gia vị cho món súp,unknown,không_xác_định,1.0
+Bị đau đầu phải làm sao?,symptom_inquiry,triệu_chứng,1.0
+Tôi bị sốt,symptom_inquiry,triệu_chứng,1.0
+"Tôi đang uống omeprazole, có thể uống thêm warfarin?",drug_interaction,tương_tác_thuốc,1.0
+Triệu chứng sốt là gì?,symptom_inquiry,triệu_chứng,0.7
+Điều chỉnh lối sống khi tim mạch?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Tuần này kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Thuốc amoxicillin có gây mệt mỏi không,side_effects,tác_dụng_phụ,1.0
+Có thể dùng atorvastatin cùng với digoxin không?,drug_interaction,tương_tác_thuốc,1.0
+Ăn đẹp 411,unknown,không_xác_định,1.0
+Bác sĩ có rảnh không,greeting,chào_hỏi,1.0
+Chống chỉ định của paracetamol,side_effects,tác_dụng_phụ,0.7
+Thuốc paracetamol có tác dụng phụ gì,side_effects,tác_dụng_phụ,1.0
+Chuẩn bị gì trước khi xét nghiệm nước tiểu?,medical_procedure,thủ_thuật_y_tế,1.0
+Cách sống khỏe với béo phì?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cách sử dụng ibuprofen đúng,dosage_question,liều_lượng,1.0
+Lịch uống thuốc cetirizine,dosage_question,liều_lượng,0.7
+Mua thuốc aspirin ở đâu,drug_question,thuốc,1.0
+Sinh hoạt hàng ngày cho trầm cảm?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Chào, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Em bé bị mệt lả,symptom_inquiry,triệu_chứng,0.8
+Liều dùng metformin cho người lớn,dosage_question,liều_lượng,0.7
+Vợ/chồng tôi ho,symptom_inquiry,triệu_chứng,0.7
+Chế độ dinh dưỡng thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Uống A chung với B được không?,drug_interaction,drug_interaction,1.0
+Thời gian uống amoxicillin,dosage_question,liều_lượng,0.7
+Hi doctor,greeting,chào_hỏi,1.0
+"Hi, xin chào!",greeting,chào_hỏi,1.0
+"Xin kính chào, chúc doctor buổi sáng tốt lành",greeting,chào_hỏi,1.0
+Anh ấy bị mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Gặp phải tình trạng kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Adalimumab có nguy cơ gây nhiễm trùng cơ hội nào?,side_effects,side_effects,1.0
+Liệu pháp miễn dịch checkpoint inhibitor cho ung thư phổi,medical_procedure,medical_procedure,1.0
+Con tôi có táo bón,symptom_inquiry,triệu_chứng,0.7
+Gần đây ho,symptom_inquiry,triệu_chứng,0.7
+Ăn vui 917,unknown,không_xác_định,1.0
+Phản ứng phụ của omeprazole,side_effects,tác_dụng_phụ,0.7
+Tập thể dục như thế nào khi gout?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cách sử dụng thuốc acetaminophen,drug_question,thuốc,0.8
+Chế độ ketogenic có phù hợp cho người bị rối loạn lipid máu?,diet_lifestyle,diet_lifestyle,1.0
+"Kính chào, tôi cần tư vấn y tế",greeting,chào_hỏi,1.0
+Bà ngoại bị đau bụng,symptom_inquiry,triệu_chứng,1.0
+Cần bác sĩ gấp: sốc phản vệ,emergency,cấp_cứu,1.0
+Tuần này ngứa,symptom_inquiry,triệu_chứng,0.7
+Thay thế cho phẫu thuật có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Sinh hoạt hàng ngày cho hen suyễn?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Chúc ông/bà, tôi cần hỗ trợ",greeting,chào_hỏi,1.0
+Cảm thấy ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Thuốc aspirin có làm giảm tác dụng của prednisolone?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc acetylsalicylic acid có tác dụng phụ gì,side_effects,tác_dụng_phụ,0.8
+Uống ibuprofen có ảnh hưởng gì,side_effects,tác_dụng_phụ,1.0
+Em bé bị đau bụng,symptom_inquiry,triệu_chứng,1.0
+Help! đột quỵ,emergency,cấp_cứu,1.0
+Help! sốt cao trên 40 độ,emergency,cấp_cứu,1.0
+Xuất hiện triệu chứng đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Khi nào cần MRI não?,medical_procedure,thủ_thuật_y_tế,1.0
+Nhạc hay 337,unknown,không_xác_định,1.0
+Sinh hoạt hàng ngày cho cholesterol cao?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Tôi đang uống lisinopril, có thể uống thêm insulin?",drug_interaction,tương_tác_thuốc,1.0
+Chế độ ăn cho người gan nhiễm mỡ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Tôi bị ho,symptom_inquiry,triệu_chứng,1.0
+Cách chăm sóc da hiệu quả nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc omeprazole có ảnh hưởng đến gabapentin?,drug_interaction,tương_tác_thuốc,1.0
+Có nên ngừng uống amoxicillin không vì bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Tập thể dục như thế nào khi đau khớp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Tôi đang uống omeprazole, có thể uống thêm vitamin C?",drug_interaction,tương_tác_thuốc,1.0
+Phối hợp paracetamol và morphine có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Nhạc tốt 453,unknown,không_xác_định,1.0
+Phản ứng phụ của metformin,side_effects,tác_dụng_phụ,0.7
+Con tôi bị sốt,symptom_inquiry,triệu_chứng,1.0
+"Đang dùng atorvastatin, có được uống tramadol?",drug_interaction,tương_tác_thuốc,1.0
+Hướng dẫn sử dụng acetaminophen,dosage_question,liều_lượng,0.8
+Có triệu chứng mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+chồng tôi bị mệt mỏi,symptom_inquiry,triệu_chứng,0.7
+Liệu amoxicillin và vitamin C có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+"Chào, cảm ơn thầy đã hỗ trợ",greeting,chào_hỏi,1.0
+Ai nên thực hiện test dị ứng?,medical_procedure,thủ_thuật_y_tế,1.0
+Thuốc lisinopril có tương tác với tramadol không?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc ibuprofen có tương tác với insulin không?,drug_interaction,tương_tác_thuốc,1.0
+Thuốc metformin có ảnh hưởng đến insulin?,drug_interaction,tương_tác_thuốc,1.0
+Chuẩn bị gì trước khi sinh thiết?,medical_procedure,thủ_thuật_y_tế,1.0
+Chế độ dinh dưỡng tiểu đường?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Con tôi bị ho khan,symptom_inquiry,triệu_chứng,0.8
+Thuốc acetylsalicylic acid uống trước hay sau ăn,dosage_question,liều_lượng,0.8
+Cần uống thuốc acetylsalicylic acid bao lâu,drug_question,thuốc,0.8
+metformin là thuốc gì?,drug_question,thuốc,0.7
+Tình trạng nguy kịch: mất ý thức,emergency,cấp_cứu,1.0
+Mấy ngày nay đau đầu,symptom_inquiry,triệu_chứng,1.0
+Làm sao để chăm sóc da an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Thuốc lisinopril có làm giảm tác dụng của tramadol?,drug_interaction,tương_tác_thuốc,1.0
+"Hello, cảm ơn cô đã hỗ trợ",greeting,chào_hỏi,1.0
+Thuốc amoxicillin có an toàn không,drug_question,thuốc,1.0
+Kinh nghiệm phòng bệnh hiệu quả?,general_health,sức_khỏe_tổng_quát,1.0
+Lịch uống thuốc metformin,dosage_question,liều_lượng,0.7
+"Xin kính chào, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Con tôi bị ho có đờm,symptom_inquiry,triệu_chứng,0.8
+Tập thể dục như thế nào khi lo âu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ăn ngon 502,unknown,không_xác_định,1.0
+Mẹ tôi bị đau đầu,symptom_inquiry,triệu_chứng,1.0
+Liều lượng thuốc aspirin,drug_question,thuốc,1.0
+Cách điều trị chán ăn,symptom_inquiry,triệu_chứng,0.7
+Phối hợp omeprazole và insulin có nguy hiểm không?,drug_interaction,tương_tác_thuốc,1.0
+Đi hay 374,unknown,không_xác_định,1.0
+Chị ấy bị nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Mấy ngày nay tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Đi đẹp 327,unknown,không_xác_định,1.0
+Tôi bị kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Ăn tốt 393,unknown,không_xác_định,1.0
+Đang bị đau tụy,symptom_inquiry,triệu_chứng,0.8
+Tuần này tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Uống ibuprofen bao nhiêu mg một ngày?,dosage_question,liều_lượng,1.0
+Lịch uống thuốc aspirin,dosage_question,liều_lượng,0.7
+Thói quen tốt cho tim mạch?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+"Chào buổi chiều, chúc bạn bình an",greeting,chào_hỏi,1.0
+Tập thể dục như thế nào,general_health,sức_khỏe_tổng_quát,1.0
+Đi hay 920,unknown,không_xác_định,1.0
+Mua thuốc amoxicillin ở đâu,drug_question,thuốc,1.0
+Đi vui 267,unknown,không_xác_định,1.0
+Từ hôm qua đau dạ dày,symptom_inquiry,triệu_chứng,0.8
+Cấp cứu! gãy xương hở,emergency,cấp_cứu,1.0
+Mấy ngày nay táo bón,symptom_inquiry,triệu_chứng,0.7
+Làm sao để chữa kiệt sức?,symptom_inquiry,triệu_chứng,0.8
+Thuốc acetaminophen chữa bệnh gì,drug_question,thuốc,0.8
+Đi ngon 256,unknown,không_xác_định,1.0
+Phương pháp tăng cường miễn dịch tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Cần làm gì để bảo vệ mắt?,general_health,sức_khỏe_tổng_quát,1.0
+Bệnh nhân nữ 29 tuổi mang thai 28 tuần bị tiền sản giật nặng cần làm gì?,emergency,emergency,1.0
+Từ hôm qua nhức đầu,symptom_inquiry,triệu_chứng,0.8
+Đi ngon 870,unknown,không_xác_định,1.0
+Liều lượng thuốc paracetamol,drug_question,thuốc,1.0
+Quy tắc giữ dáng cơ bản?,general_health,sức_khỏe_tổng_quát,1.0
+random text,unknown,không_xác_định,1.0
+Ăn hay 758,unknown,không_xác_định,1.0
+Thuốc acetylsalicylic acid làm tôi buồn nôn,side_effects,tác_dụng_phụ,0.8
+Tôi có thể hỏi bác sĩ không,greeting,chào_hỏi,1.0
+Mẹ tôi bị mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Ăn tốt 229,unknown,không_xác_định,1.0
+Tôi thấy ho khan,symptom_inquiry,triệu_chứng,0.8
+Trẻ em uống amoxicillin thế nào?,dosage_question,liều_lượng,1.0
+"Hello chuyên gia, tôi có câu hỏi",greeting,chào_hỏi,1.0
+Tôi nên giữ ấm mùa đông như thế nào?,general_health,sức_khỏe_tổng_quát,1.0
+Làm sao để giảm cân?,general_health,sức_khỏe_tổng_quát,1.0
+"Chào buổi chiều, xin chào!",greeting,chào_hỏi,1.0
+Tương tác giữa amlodipine và insulin như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+Xem hay 446,unknown,không_xác_định,1.0
+Nhạc vui 651,unknown,không_xác_định,1.0
+Xuất hiện triệu chứng ho,symptom_inquiry,triệu_chứng,1.0
+"Chào buổi chiều, rất vui được gặp bạn",greeting,chào_hỏi,1.0
+Phương pháp thải độc cơ thể tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Ăn hay 249,unknown,không_xác_định,1.0
+lâu nay đau bụng,symptom_inquiry,triệu_chứng,0.8
+Từ hôm qua ho khan,symptom_inquiry,triệu_chứng,0.8
+Xem ngon 602,unknown,không_xác_định,1.0
+Ăn ngon 940,unknown,không_xác_định,1.0
+Uống paracetamol xong bị buồn nôn,side_effects,tác_dụng_phụ,1.0
+Cần làm gì để chống lão hóa?,general_health,sức_khỏe_tổng_quát,1.0
+Phim tốt 153,unknown,không_xác_định,1.0
+Cần cấp cứu ngay vì ngộ độc nghiêm trọng,emergency,cấp_cứu,1.0
+paracetamol là thuốc gì,drug_question,thuốc,1.0
+Thời gian uống aspirin,dosage_question,liều_lượng,0.7
+Uống acetylsalicylic acid xong bị đau đầu,side_effects,tác_dụng_phụ,0.8
+Kết hợp lisinopril với iron có an toàn?,drug_interaction,tương_tác_thuốc,1.0
+Uống Amoxil có bị đau đầu không?,side_effects,tác_dụng_phụ,0.8
+Khi nào cần phẫu thuật?,medical_procedure,thủ_thuật_y_tế,1.0
+Anh ấy bị đau nửa đầu,symptom_inquiry,triệu_chứng,0.8
+Vợ/chồng tôi táo bón,symptom_inquiry,triệu_chứng,0.7
+Thuốc ibuprofen làm tôi buồn nôn,side_effects,tác_dụng_phụ,1.0
+Cách dùng paracetamol đúng cách,dosage_question,liều_lượng,0.7
+Tình huống khẩn cấp: đau ngực dữ dội,emergency,cấp_cứu,1.0
+Ông ấy bị ho,symptom_inquiry,triệu_chứng,1.0
+Tình trạng nguy kịch: gãy xương hở,emergency,cấp_cứu,1.0
+Cần cấp cứu ngay vì sốc phản vệ,emergency,cấp_cứu,1.0
+Làm thế nào để chăm sóc da?,general_health,sức_khỏe_tổng_quát,1.0
+Nhạc tốt 151,unknown,không_xác_định,1.0
+Bí quyết sống khỏe mạnh với thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Khẩn cấp: ngộ độc nghiêm trọng,emergency,cấp_cứu,1.0
+amoxicillin uống như thế nào?,drug_question,thuốc,1.0
+Chế độ dinh dưỡng gout?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Làm thế nào để giữ dáng?,general_health,sức_khỏe_tổng_quát,1.0
+Liều dùng của aspirin,dosage_question,liều_lượng,1.0
+Tác dụng của thuốc Amoxil,drug_question,thuốc,0.8
+Cho tôi hỏi về thuốc ibuprofen,drug_question,thuốc,1.0
+Ăn hay 282,unknown,không_xác_định,1.0
+Sinh hoạt hàng ngày cho cao huyết áp?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Thời gian chụp X-quang mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+Rủi ro của test dị ứng là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Lối sống lành mạnh với mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Triệu chứng mệt mỏi là gì?,symptom_inquiry,triệu_chứng,0.7
+Tương tác giữa amlodipine và warfarin như thế nào?,drug_interaction,tương_tác_thuốc,1.0
+Con tôi có đau đầu,symptom_inquiry,triệu_chứng,0.7
+Ăn tốt 960,unknown,không_xác_định,1.0
+Liệu paracetamol và insulin có xung đột?,drug_interaction,tương_tác_thuốc,1.0
+Cần bác sĩ gấp: đau ngực dữ dội,emergency,cấp_cứu,1.0
+Có nên ngừng uống ibuprofen không vì bị chóng mặt,side_effects,tác_dụng_phụ,1.0
+Từ sáng tiêu chảy,symptom_inquiry,triệu_chứng,0.7
+Xin chào,greeting,chào_hỏi,1.0
+Cách điều trị táo bón,symptom_inquiry,triệu_chứng,0.7
+mệt mỏi là bệnh gì?,symptom_inquiry,triệu_chứng,1.0
+"Đang dùng omeprazole, có được uống iron?",drug_interaction,tương_tác_thuốc,1.0
+Tôi bị chán ăn,symptom_inquiry,triệu_chứng,0.7
+Triệu chứng tiêu chảy là gì?,symptom_inquiry,triệu_chứng,0.7
+Thông tin về acetylsalicylic acid,drug_question,thuốc,0.8
+Thuốc ibuprofen dùng để làm gì,drug_question,thuốc,1.0
+Thời gian nội soi dạ dày mất bao lâu?,medical_procedure,thủ_thuật_y_tế,1.0
+"Chào bác sĩ, bạn có thể giúp tôi không?",greeting,chào_hỏi,1.0
+Khẩn cấp: gãy xương hở,emergency,cấp_cứu,1.0
+Thuốc aspirin có ảnh hưởng đến insulin?,drug_interaction,tương_tác_thuốc,1.0
+Cần bác sĩ gấp: gãy xương hở,emergency,cấp_cứu,1.0
+Rủi ro của siêu âm tim là gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Tình huống khẩn cấp: gãy xương hở,emergency,cấp_cứu,1.0
+Thời gian uống metformin,dosage_question,liều_lượng,0.7
+Giá thuốc amoxicillin bao nhiêu,drug_question,thuốc,1.0
+Cách ăn uống để tăng cân?,general_health,sức_khỏe_tổng_quát,1.0
+Xem đẹp 724,unknown,không_xác_định,1.0
+Khi nào cần sinh thiết?,medical_procedure,thủ_thuật_y_tế,1.0
+Mùa hè này nên đi du lịch Đà Lạt hay Sapa?,unknown,không_xác_định,1.0
+Cần làm gì để tăng cường trí nhớ?,general_health,sức_khỏe_tổng_quát,1.0
+Tác dụng phụ của paracetamol,side_effects,tác_dụng_phụ,1.0
+Tác dụng phụ của amoxicillin,side_effects,tác_dụng_phụ,1.0
+Sau khi uống paracetamol bị mệt mỏi,side_effects,tác_dụng_phụ,1.0
+Kỹ thuật ECMO có chỉ định trong suy hô hấp nặng COVID-19?,medical_procedure,medical_procedure,1.0
+Vợ/chồng tôi mệt mỏi,symptom_inquiry,triệu_chứng,0.7
+Thuốc omeprazole có tương tác với warfarin không?,drug_interaction,tương_tác_thuốc,1.0
+Báo động đỏ: tim ngừng đập,emergency,cấp_cứu,1.0
+"Hello, chúc quý vị một ngày tuyệt vời",greeting,chào_hỏi,1.0
+Cho tôi hỏi về thuốc acetylsalicylic acid,drug_question,thuốc,0.8
+Đang bị kiệt sức,symptom_inquiry,triệu_chứng,0.8
+"Chào bác sĩ, rất vui được gặp ông/bà",greeting,chào_hỏi,1.0
+Bà ngoại bị mệt mỏi,symptom_inquiry,triệu_chứng,1.0
+Help! đau ngực dữ dội,emergency,cấp_cứu,1.0
+Chế độ dinh dưỡng mất ngủ?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Sau đo huyết áp cần lưu ý gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Đi đẹp 497,unknown,không_xác_định,1.0
+Nhạc đẹp 386,unknown,không_xác_định,1.0
+"Đang dùng atorvastatin, có được uống morphine?",drug_interaction,tương_tác_thuốc,1.0
+Phim ngon 115,unknown,không_xác_định,1.0
+Đang bị mệt lả,symptom_inquiry,triệu_chứng,0.8
+Làm sao để thải độc cơ thể an toàn?,general_health,sức_khỏe_tổng_quát,1.0
+Thói quen tốt cho gout?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Ông ấy bị kiệt sức,symptom_inquiry,triệu_chứng,0.8
+Thay thế cho nội soi dạ dày có gì?,medical_procedure,thủ_thuật_y_tế,1.0
+Tác dụng không mong muốn của acetylsalicylic acid là gì?,side_effects,tác_dụng_phụ,0.8
+"Chào bác sĩ, rất vui được gặp chuyên gia",greeting,chào_hỏi,1.0
+Thuốc cetirizine uống lúc nào?,dosage_question,liều_lượng,0.7
+Chị ấy bị sốt,symptom_inquiry,triệu_chứng,1.0
+Phương pháp giữ dáng tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Phương pháp ngủ ngon tốt nhất?,general_health,sức_khỏe_tổng_quát,1.0
+Cần làm gì để giữ ấm mùa đông?,general_health,sức_khỏe_tổng_quát,1.0
+Có thể dùng metformin cùng với warfarin không?,drug_interaction,tương_tác_thuốc,1.0
+Tôi thấy đau bụng,symptom_inquiry,triệu_chứng,1.0
+Tập thể dục như thế nào khi thận yếu?,diet_lifestyle,chế_độ_sinh_hoạt,1.0
+Cần làm gì để thải độc cơ thể?,general_health,sức_khỏe_tổng_quát,1.0
